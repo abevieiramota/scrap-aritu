@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=1_4-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=3_1-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=1_3-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=3_0-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=1_2-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=2_2-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=2_1-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=2_0-4Ttw8" /><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>
+	Portal da Transparência.
+    
+</title><link href="css/template2.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        .style1
+        {
+            float: right;
+            margin: 35px 0 0 0;
+            font: bold 25pt Arial, Helvetica, sans-serif;
+            color: #000000;
+        }
+    </style>
+<style type="text/css" media="screen">#piecemaker {visibility:hidden}</style></head>
+<body>
+    <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="js/vticker.js"></script>
+    <script language="javascript" type="text/javascript" src="js/swfobject/swfobject.js"></script>
+    <script language="javascript" type="text/javascript" src="js/contentflow.js"></script><link rel="stylesheet" href="./css/contentflow.css" type="text/css" media="screen" />
+    <script type="text/javascript">
+
+//        $(function () {
+//            var ticker = $('#itens').vTicker({
+//                speed: 500,
+//                pause: 5000,
+//                height: 310,
+//                animation: 'fade',
+//                mousePause: true,
+//                showItems: 3
+//            });
+
+//            $('.botaobaixo').click(function () {
+//                ticker.vTickerMoveDown();
+//            });
+//            $('.botaocima').click(function () {
+//                ticker.vTickerMoveUp();
+//            });
+
+//        });
+
+
+
+        var flashvars = {};
+        flashvars.cssSource = "css/piecemaker.css";
+        flashvars.xmlSource = "piecemaker.xml";
+
+        var params = {};
+        params.play = "false";
+        params.menu = "false";
+        params.scale = "showall";
+        params.wmode = "transparent";
+        params.allowfullscreen = "false";
+        params.allowscriptaccess = "always";
+        params.allownetworking = "all";
+
+        swfobject.embedSWF('piecemaker.swf', 'piecemaker', '956', '380', '10', null, flashvars, params, null);
+
+    </script>
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>    
+    <script src="jquery-toastmessage/src/main/javascript/jquery.toastmessage.js" type="text/javascript"></script>    
+    <link href="jquery-toastmessage/src/main/resources/css/jquery.toastmessage.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+
+        function showSuccessToast() {
+            $().toastmessage('showSuccessToast', "Dialogo Exibido com Sucesso...");
+        }
+        function showStickySuccessToast() {
+            $().toastmessage('showToast', {
+                text: 'Dialogo Exibido com Sucesso - Dialogo Fixo',
+                sticky: true,
+                position: 'top-right',
+                type: 'success',
+                closeText: '',
+                close: function () {
+                    console.log("toast is closed ...");
+                }
+            });
+
+        }
+        function showNoticeToast() {
+            $().toastmessage('showNoticeToast', "Notice  Dialog ");
+        }
+        function showStickyNoticeToast() {
+            $().toastmessage('showToast', {
+                text: 'Notice Dialog Fixo',
+                sticky: true,
+                position: 'top-left',
+                type: 'notice',
+                closeText: '',
+                close: function () { console.log("toast is closed ..."); }
+            });
+        }
+        function showWarningToast() {
+            $().toastmessage('showWarningToast', "Warning Dialog ");
+        }
+        function showStickyWarningToast() {
+            $().toastmessage('showToast', {
+                text: 'Warning Dialog Fixo',
+                sticky: true,
+                position: 'middle-right',
+                type: 'warning',
+                closeText: '',
+                close: function () {
+                    console.log("toast is closed ...");
+                }
+            });
+        }
+        function showErrorToast() {
+            $().toastmessage('showErrorToast', "Error Dialog  ...");
+        }
+        function showStickyErrorToast() {
+            $().toastmessage('showToast', {
+                text: 'Error Dialog Fixo',
+                sticky: true,
+                position: 'center',
+                type: 'error',
+                closeText: '',
+                close: function () {
+                    console.log("toast is closed ...");
+                }
+            });
+        }
+
+</script>
+    <form method="post" action="resultadoDespesa.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTg4MzgzODc2MA9kFgJmD2QWAgIBD2QWBgIBDxYCHgRocmVmBTdodHRwOi8vMTg3LjExLjEzMy4xNS9Qb3J0YWxkYVRyYW5zcGFyZW5jaWFcZGVmYXVsdC5hc3B4ZAIFDw8WAh4EVGV4dAUxQWdlbmNpYSBSZWd1bGFkb3JhIGRhIEVzdMOibmNpYSBUdXLDrXN0aWNhIGRlIEl0dWRkAgcPZBYCAgEPZBYEZg9kFggCAQ88KwAWAgAPFgIeDUNhbGxiYWNrU3RhdGUF+AQvd0VXQWg0RlUzUmhkR1VGekFOQ2VqUklRVUZKUWtKMkx5OUJaMEZITHk4NFEwRkJZaTh2ZDBsQlFuWXZMMEZuUVVjdkx6aERRVUZpTHk5M1NVRkNkaTh2UVdkQlJ5OHZPRU5CUVdJdkwzZEpRVUoyTHk5QlowRkhMeTg0UTBGQllpOHZkMGxCUW5ZdkwwRm5RVWN2THpoRFFVRmlMeTkzU1VGQ2RpOHZRV2RCUnk4dk9FTkJRV0l2TDNkSlFVSjJMeTlCWjBGSEx5ODRRMEZCWWk4dmQwbEJRbll2TDBGblFVY3ZMemhEUVVGaUx5OTNTVUZDZGk4dlFXZEJSeTh2T0VOQlFXSXZMM2RKUVVKMkx5OUJaMEZITHk4NFEwRkJZaTh2ZDBsQlFuWXZMMEZuUVVjdkx6aERRVUZpTHk5M1NVRkNkaTh2UVdkQlJ5OHZPRU5CUVdJdkwzZEpRVUoyTHk5QlowRkhMeTg0UTBGQllpOHZkMGxCUW5ZdkwwRm5RVWN2THpoRFFVRmlMeTkzU1VGQ2RpOHZRV2RCUnk4dk9FTkJRV0l2TDNkSlFVSjJMeTlCWjBGSEx5ODRRMEZCWWk4dmQwbEJRbll2TDBGblFVY3ZMemhEUVVGaUx5OTNTVUZDZGk4dlFXZEJSeTh2T0VOQlFXTkNRV2RGU0VGblNVSkNkMDFEUVZGalJVRm5SVWhDVVVsQ1FuZFpRMEZSWTBoQlowVklRMEZKUWtKM1FVaEJRV05CUW5kQlJrRkJRVUZuUVd0RFFVRnJRMEZCU1VGQmQyTkZRV2RCU0VGQlNVSkNkMEZJUVVGSlFrSjNRVWhCUVQwOWQGD2QQFggCNgI3AjgCOQI6AjsCPAI9Fgg8KwAKAQAWAh4PQ29sVmlzaWJsZUluZGV4AgE8KwAKAQAWAh8DAgI8KwAKAQAWAh8DAgM8KwAKAQAWAh8DAgQ8KwAKAQAWAh8DAgU8KwAKAQAWAh8DAgY8KwAKAQAWAh8DAgc8KwALAQAWAh8DAggPFggCAQIBAgECAQIBAgECAQICFgIFlQFEZXZFeHByZXNzLldlYi5BU1B4R3JpZFZpZXcuR3JpZFZpZXdEYXRhQ29sdW1uLCBEZXZFeHByZXNzLldlYi5BU1B4R3JpZFZpZXcudjExLjEsIFZlcnNpb249MTEuMS40LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQWZAURldkV4cHJlc3MuV2ViLkFTUHhHcmlkVmlldy5HcmlkVmlld0RhdGFUZXh0Q29sdW1uLCBEZXZFeHByZXNzLldlYi5BU1B4R3JpZFZpZXcudjExLjEsIFZlcnNpb249MTEuMS40LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YWQCAw88KwAWAgAPFgIeB1Zpc2libGVnZAYPZBAWCGYCAQICAgMCBAIFAgYCBxYIPCsACgEAFgIfA2Y8KwAKAQAWAh8DAgE8KwAKAQAWAh8DAgI8KwAKAQAWAh8DAgM8KwAKAQAWAh8DAgQ8KwAKAQAWAh8DAgU8KwAKAQAWAh8DAgY8KwALAQAWAh8DAgcPFggCAQIBAgECAQIBAgECAQICFgIFlQFEZXZFeHByZXNzLldlYi5BU1B4R3JpZFZpZXcuR3JpZFZpZXdEYXRhQ29sdW1uLCBEZXZFeHByZXNzLldlYi5BU1B4R3JpZFZpZXcudjExLjEsIFZlcnNpb249MTEuMS40LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQWZAURldkV4cHJlc3MuV2ViLkFTUHhHcmlkVmlldy5HcmlkVmlld0RhdGFUZXh0Q29sdW1uLCBEZXZFeHByZXNzLldlYi5BU1B4R3JpZFZpZXcudjExLjEsIFZlcnNpb249MTEuMS40LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YWQCBQ88KwAWAgAPFgIfAgWYAS93RVdBaDRGVTNSaGRHVUZaRUozWjBoQlFVbENRbmRGUTBGUlkwTkJaMFZJUVhkSlFrSjNVVU5CVVdOR1FXZEZTRUpuU1VKQ2QyTkRRVkZqUVVKM1FVaEJRV05CUWxGQlFVRkpRVXBCWjBGS1FXZEJRMEZCVFVoQ1FVbEJRbmRCUTBGUlkwRkNkMEZEUVZGalFVSjNRVDA9ZAYPZBAWCGYCAQICAgMCBAIFAgYCBxYIPCsACgEAFgIfA2Y8KwAKAQAWAh8DAgE8KwAKAQAWAh8DAgI8KwAKAQAWAh8DAgM8KwAKAQAWAh8DAgQ8KwAKAQAWAh8DAgU8KwAKAQAWAh8DAgY8KwALAQAWAh8DAgcPFggCAQIBAgECAQIBAgECAQICFgIFlQFEZXZFeHByZXNzLldlYi5BU1B4R3JpZFZpZXcuR3JpZFZpZXdEYXRhQ29sdW1uLCBEZXZFeHByZXNzLldlYi5BU1B4R3JpZFZpZXcudjExLjEsIFZlcnNpb249MTEuMS40LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQWZAURldkV4cHJlc3MuV2ViLkFTUHhHcmlkVmlldy5HcmlkVmlld0RhdGFUZXh0Q29sdW1uLCBEZXZFeHByZXNzLldlYi5BU1B4R3JpZFZpZXcudjExLjEsIFZlcnNpb249MTEuMS40LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YWQCBw8PFgQfAQUoTsOjbyBow6EgcmVnaXN0cm9zIHBhcmEgZGF0YSBwZXNxdWlzYWRhIR8EZ2RkAgEPZBYCAgMPZBYCAgEPPCsABwEEFCsAAmRkFgJmDxQrAAkPFgIeDl8hVXNlVmlld1N0YXRlZ2RkZBQrAAEWAh4JSXRlbUNsaWNrBUBmdW5jdGlvbihzLCBlKSB7DQpSZXBvcnRUb29sYmFyMS5oYW5kbGVCdXR0b24oZS5pdGVtLm5hbWUpOw0KfQ0KZGQPZBAWDmYCAQICAgMCBAIFAgYCBwIIAgkCCgILAgwCDRYOPCsADAEAFgQeDlJ1bnRpbWVDcmVhdGVkZx4ETmFtZWU8KwAMAQAWBB8HZx8IZTwrAAwCABYIHwdnHwgFCUZpcnN0UGFnZR8BZR4HVG9vbFRpcAUIUHJpbWVpcmECFCsAAhYCHgNBbHQFCFByaW1laXJhFCsAARYEHghDc3NDbGFzcwUaZHhYdHJhUmVwb3J0c19CdG5GaXJzdFBhZ2UeEERpc2FibGVkQ3NzQ2xhc3MFImR4WHRyYVJlcG9ydHNfQnRuRmlyc3RQYWdlRGlzYWJsZWQ8KwAMAgAWCB8HZx8IBQxQcmV2aW91c1BhZ2UfAWUfCQUIQW50ZXJpb3ICFCsAAhYCHwoFCEFudGVyaW9yFCsAARYEHwsFGWR4WHRyYVJlcG9ydHNfQnRuUHJldlBhZ2UfDAUhZHhYdHJhUmVwb3J0c19CdG5QcmV2UGFnZURpc2FibGVkPCsADAEAFgQfB2cfCGU8KwAMAQAWBB8HZx8IBQpQYWdlTnVtYmVyPCsADAEAFgQfB2cfCGU8KwAMAQAWBB8HZx8IZTwrAAwBABYEHwdnHwgFCVBhZ2VDb3VudDwrAAwBABYEHwdnHwhlPCsADAIAFggfB2cfCAUITmV4dFBhZ2UfAWUfCQUIUHLDs3hpbWECFCsAAhYCHwoFCFByw7N4aW1hFCsAARYEHwsFGWR4WHRyYVJlcG9ydHNfQnRuTmV4dFBhZ2UfDAUhZHhYdHJhUmVwb3J0c19CdG5OZXh0UGFnZURpc2FibGVkPCsADAIAFggfB2cfCAUITGFzdFBhZ2UfAWUfCQUHw5psdGltYQIUKwACFgIfCgUHw5psdGltYRQrAAEWBB8LBRlkeFh0cmFSZXBvcnRzX0J0bkxhc3RQYWdlHwwFIWR4WHRyYVJlcG9ydHNfQnRuTGFzdFBhZ2VEaXNhYmxlZDwrAAwBABYEHwdnHwhlPCsADAEAFgYfB2cfCGUeCkJlZ2luR3JvdXBnZGRkFgJmD2QWAmYPZBYCZg9kFgJmD2QWAmYPZBYCZg9kFgJmD2QWAmYPZBYUZg9kFgJmD2QWAmYPZBYCZg9kFgJmDzwrAAQBAA8WAh4PRGF0YVNvdXJjZUJvdW5kZ2RkAgIPZBYCZg9kFgJmD2QWAmYPZBYCZg88KwAEAQAPFgIfDmdkZAIID2QWAmYPZBYCZg9kFgJmD2QWAmYPPCsABAEADxYEHw5nHhNBc3NvY2lhdGVkQ29udHJvbElEBQ1QYWdlTnVtYmVyX1dSZGQCCg9kFgJmD2QWAmYPZBYCZg9kFgJmDzwrAAUBAA8WAh8OZ2RkAgwPZBYCZg9kFgJmD2QWAmYPZBYCZg88KwAEAQAPFgQfDmcfDwUMUGFnZUNvdW50X1dSZGQCDg9kFgJmD2QWAmYPZBYCZg9kFgJmDzwrAAQBAA8WAh8OZ2RkAhAPZBYCZg9kFgJmD2QWAmYPZBYCZg88KwAFAQAPFgIfDmdkZAISD2QWAmYPZBYCZg9kFgJmD2QWAmYPPCsABAEADxYCHw5nZGQCGA9kFgJmD2QWAmYPZBYCZg9kFgJmDzwrAAQBAA8WAh8OZ2RkAh0PZBYCZg9kFgJmD2QWAmYPZBYCZg88KwAEAQAPFgIfDmdkZBgCBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUdY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndjIFJmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkbWx0UmVsYXRvcmlvDw9kZmR6tPkr2Lgd7mvkqcqpxfBGHhl3ni12UwFCBB55KamdbA==" />
+</div>
+
+<script type="text/javascript">
+//&lt;![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]&gt;
+</script>
+
+
+<script src="/PortaldaTransparencia/WebResource.axd?d=1zG76KGivfeFsnc2ISvVLTwZ14U_VGCANSuZ5JnCTLU9qZXssGbrxgagpUL8z1V3zwlW0tzTbtFoTxL3b1SVxP2A9wsG4Kz2CkKjYNVyicE1&amp;t=635589363476784022" type="text/javascript"></script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3D9686D0" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAMD2/Z3MjJEbHuvbmdgRpR5/mghLBNe6TEtB6a/2xQ/U7+FDkSiVyoQpAa+EGALUVGdhuFXlpZqBVGuP84qtqZCovbts7C63519flPse7hpAA==" />
+</div>
+    <div id="geral">
+        <div id="topo">
+            <div class="container">
+                <div class="limite">
+                    <div style="display: block; width: 100%">
+                        <div style="display: inline; float: left; width: 65%">
+                            <a href="http://187.11.133.15/PortaldaTransparencia\default.aspx" id="logotipo" title="Voltar para a home" class="logo">
+                                <img src="img/logo_prefeitura.jpg" border="0" usemap="#Map" /></a>
+                            
+                                <p></p>
+                                <h1 class="style1"><span id="Label1" style="font-size:24px;">Portal da Transparência</span></h1>    
+                                <span style="display: inline; padding-left:9px; font-size:small; font-family:Tahoma"><span id="nmC">Agencia Reguladora da Estância Turística de Itu</span> </span>                            
+                        </div>
+                        <div style="display: inline; float: left; width: 5%">
+                             </div>
+                        <div style="display: inline; float: left; width: 35%; vertical-align: bottom; margin-top: 59px; height: 16px;">
+                        © 2015 Copyright CECAM All Rights Reserved.<br />
+                        <a href="http://www.cecam.com.br" target="_blank">www.cecam.com.br</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="container">
+        <div class="limite">
+            <div class="box">
+                <h2 class="titulo" style="color: #000000">Resultados</h2>
+                
+                        <ul class="form">
+                            <p>
+                                
+                            </p>
+                            <p>
+                                <script id="dxis_2049592293" src="/PortaldaTransparencia/DXR.axd?r=1_42-4Ttw8" type="text/javascript"></script><script id="dxis_1348685067" src="/PortaldaTransparencia/DXR.axd?r=1_74-4Ttw8" type="text/javascript"></script><script id="dxis_2080027675" src="/PortaldaTransparencia/DXR.axd?r=1_52-4Ttw8" type="text/javascript"></script><script id="dxis_1267223850" src="/PortaldaTransparencia/DXR.axd?r=1_65-4Ttw8" type="text/javascript"></script><script id="dxis_784139512" src="/PortaldaTransparencia/DXR.axd?r=3_7-4Ttw8" type="text/javascript"></script><script id="dxis_1931430885" src="/PortaldaTransparencia/DXR.axd?r=2_22-4Ttw8" type="text/javascript"></script><script id="dxis_1931431334" src="/PortaldaTransparencia/DXR.axd?r=2_29-4Ttw8" type="text/javascript"></script><script id="dxss_715525413" type="text/javascript">
+&lt;!--
+window.__aspxServerFormID = 'form1';
+
+//--&gt;
+</script></p><table class="dxgvControl" cellspacing="0" cellpadding="0" id="ContentPlaceHolder1_gv2" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+	<tbody><tr>
+		<td><table id="ContentPlaceHolder1_gv2_DXMainTable" class="dxgvTable" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;empty-cells:show;">
+			<tbody><tr id="ContentPlaceHolder1_gv2_DXHeadersRow0">
+				<td id="ContentPlaceHolder1_gv2_col0" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv2', this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>Empenho</td>
+					</tr>
+				</tbody></table></td><td id="ContentPlaceHolder1_gv2_col1" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv2', this, event);" style="width:15%;border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>CPF/CNPJ</td>
+					</tr>
+				</tbody></table></td><td id="ContentPlaceHolder1_gv2_col2" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv2', this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>Fornecedor</td>
+					</tr>
+				</tbody></table></td><td id="ContentPlaceHolder1_gv2_col3" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv2', this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>Descrição</td>
+					</tr>
+				</tbody></table></td><td id="ContentPlaceHolder1_gv2_col4" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv2', this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>Funcional</td>
+					</tr>
+				</tbody></table></td><td id="ContentPlaceHolder1_gv2_col5" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv2', this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>Mod. Lic.</td>
+					</tr>
+				</tbody></table></td><td id="ContentPlaceHolder1_gv2_col6" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv2', this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>Licitação</td>
+					</tr>
+				</tbody></table></td><td id="ContentPlaceHolder1_gv2_col7" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv2', this, event);" style="border-top-width:0px;border-left-width:0px;border-right-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>Valor Liquidado (R$)</td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr class="dxgvEmptyDataRow">
+				<td class="dxgv" colspan="8"><div>
+					No data to display
+				</div></td>
+			</tr><tr id="ContentPlaceHolder1_gv2_DXFooterRow" class="dxgvFooter">
+				<td class="dxgv" style="border-bottom-width:0px;"> </td><td class="dxgv" style="border-bottom-width:0px;"> </td><td class="dxgv" style="border-bottom-width:0px;"> </td><td class="dxgv" style="border-bottom-width:0px;"> </td><td class="dxgv" style="border-bottom-width:0px;"> </td><td class="dxgv" style="border-bottom-width:0px;"> </td><td class="dxgv" style="border-bottom-width:0px;"> </td><td class="dxgv" style="border-right-width:0px;border-bottom-width:0px;">Valor Total : </td>
+			</tr>
+		</tbody></table><img id="ContentPlaceHolder1_gv2_IADD" class="dxGridView_gvDragAndDropArrowDown" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="|" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ContentPlaceHolder1_gv2_IADU" class="dxGridView_gvDragAndDropArrowUp" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="|" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ContentPlaceHolder1_gv2_IDHF" class="dxGridView_gvDragAndDropHideColumn" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="Hide" style="position:absolute;visibility:hidden;top:-100px;" /><table id="ContentPlaceHolder1_gv2_LP" class="dxgvLoadingPanel" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+			<tbody><tr>
+				<td class="dx"><img src="/PortaldaTransparencia/DXR.axd?r=3_3-4Ttw8" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;">Loading…</td>
+			</tr>
+		</tbody></table><div id="ContentPlaceHolder1_gv2_LD" class="dxgvLoadingDiv" style="display:none;z-index:29999;position:absolute;">
+
+		</div><input type="hidden" name="ctl00$ContentPlaceHolder1$gv2$DXSelInput" id="ContentPlaceHolder1_gv2_DXSelInput" /><table id="ContentPlaceHolder1_gv2_DXStyleTable" style="display:none;">
+			<tbody><tr>
+				<td></td>
+			</tr><tr class="dxgvEditingErrorRow">
+				<td class="dxgv" colspan="8" style="border-right-width:0px;"></td>
+			</tr><tr class="dxgvSelectedRow">
+				<td></td>
+			</tr><tr class="dxgvFocusedRow">
+				<td></td>
+			</tr><tr class="dxgvFocusedGroupRow">
+				<td></td>
+			</tr>
+		</tbody></table><input type="hidden" name="ctl00$ContentPlaceHolder1$gv2$CallbackState" id="ContentPlaceHolder1_gv2_CallbackState" value="/wEWAh4FU3RhdGUFZEJ3Z0hBQUlCQndFQ0FRY0NBZ0VIQXdJQkJ3UUNBUWNGQWdFSEJnSUJCd2NDQVFjQUJ3QUhBQWNBQlFBQUFJQUpBZ0FKQWdBQ0FBTUhCQUlBQndBQ0FRY0FCd0FDQVFjQUJ3QT0=" /></td>
+	</tr>
+</tbody></table><script id="dxss_739794272" type="text/javascript">
+&lt;!--
+
+var dxo = new ASPxClientGridView('ContentPlaceHolder1_gv2');
+window['gv2'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$gv2',arg,aspxCallback,'ContentPlaceHolder1_gv2',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$gv2';
+dxo.callBacksEnabled=false;
+dxo.pageRowCount=0;
+dxo.pageRowSize=15;
+dxo.pageIndex=0;
+dxo.pageCount=0;
+dxo.selectedWithoutPageRowCount=0;
+dxo.visibleStartIndex=0;
+dxo.focusedRowIndex=-1;
+dxo.allowFocusedRow=false;
+dxo.isColumnsResizable=false;
+dxo.isVerticalScrolling=false;
+dxo.isHorizontalScrolling=false;
+dxo.isMainControlResizable=false;
+dxo.indentColumnCount=0;
+dxo.callbackOnFocusedRowChanged=false;
+dxo.callbackOnSelectionChanged=false;
+dxo.autoFilterDelay='1200';
+dxo.columns = [new ASPxClientGridViewColumn('',0,-1,'CD_EMPENHO',1,'',1,1,1,0),
+new ASPxClientGridViewColumn('',1,-1,'NR_CPFCNPJ',1,'',1,1,1,0),
+new ASPxClientGridViewColumn('',2,-1,'NM_FORNECEDOR',1,'',1,1,1,0),
+new ASPxClientGridViewColumn('',3,-1,'DS_HISTORICO',1,'',1,1,1,0),
+new ASPxClientGridViewColumn('',4,-1,'DS_FUNCIONALPROGRAMATICA',1,'',1,1,1,0),
+new ASPxClientGridViewColumn('',5,-1,'TP_MODALIDADE',1,'',1,1,1,0),
+new ASPxClientGridViewColumn('',6,-1,'NR_LICITACAO',1,'',1,1,1,0),
+new ASPxClientGridViewColumn('',7,-1,'VL_LIQUIDADO',1,'',1,1,1,0)];
+dxo.editState=0;
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+                            <p></p>
+                            <p>
+                                
+                            </p>
+                            <p>
+                                <span id="ContentPlaceHolder1_lblMsg">Não há registros para data pesquisada!</span>
+                            </p>
+                            <li class="botoes">
+                                <input type="submit" name="ctl00$ContentPlaceHolder1$btnEnviar" value="voltar" id="ContentPlaceHolder1_btnEnviar" class="btazul" style="margin-right: 0px" />
+                            </li>
+                        </ul>
+                    
+                
+            </div>
+            <div class="box">
+            </div>
+        </div>
+    </div>
+
+        
+    </div>
+    
+
+<script type="text/javascript">
+//&lt;![CDATA[
+
+WebForm_InitCallback();//]]&gt;
+</script>
+<input type="hidden" name="DXScript" value="1_42,1_74,1_52,1_65,3_7,2_22,2_29" /></form>
+
+
+</body></html>

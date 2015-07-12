@@ -1,0 +1,461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=1_4-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=3_1-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=1_3-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=3_0-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=1_2-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=2_2-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=2_1-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=2_0-4Ttw8" /><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>
+	Portal da Transparência.
+    
+</title><link href="css/template2.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        .style1
+        {
+            float: right;
+            margin: 35px 0 0 0;
+            font: bold 25pt Arial, Helvetica, sans-serif;
+            color: #000000;
+        }
+    </style>
+<style type="text/css" media="screen">#piecemaker {visibility:hidden}</style></head>
+<body>
+    <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="js/vticker.js"></script>
+    <script language="javascript" type="text/javascript" src="js/swfobject/swfobject.js"></script>
+    <script language="javascript" type="text/javascript" src="js/contentflow.js"></script><link rel="stylesheet" href="./css/contentflow.css" type="text/css" media="screen" />
+    <script type="text/javascript">
+
+//        $(function () {
+//            var ticker = $('#itens').vTicker({
+//                speed: 500,
+//                pause: 5000,
+//                height: 310,
+//                animation: 'fade',
+//                mousePause: true,
+//                showItems: 3
+//            });
+
+//            $('.botaobaixo').click(function () {
+//                ticker.vTickerMoveDown();
+//            });
+//            $('.botaocima').click(function () {
+//                ticker.vTickerMoveUp();
+//            });
+
+//        });
+
+
+
+        var flashvars = {};
+        flashvars.cssSource = "css/piecemaker.css";
+        flashvars.xmlSource = "piecemaker.xml";
+
+        var params = {};
+        params.play = "false";
+        params.menu = "false";
+        params.scale = "showall";
+        params.wmode = "transparent";
+        params.allowfullscreen = "false";
+        params.allowscriptaccess = "always";
+        params.allownetworking = "all";
+
+        swfobject.embedSWF('piecemaker.swf', 'piecemaker', '956', '380', '10', null, flashvars, params, null);
+
+    </script>
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>    
+    <script src="jquery-toastmessage/src/main/javascript/jquery.toastmessage.js" type="text/javascript"></script>    
+    <link href="jquery-toastmessage/src/main/resources/css/jquery.toastmessage.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+
+        function showSuccessToast() {
+            $().toastmessage('showSuccessToast', "Dialogo Exibido com Sucesso...");
+        }
+        function showStickySuccessToast() {
+            $().toastmessage('showToast', {
+                text: 'Dialogo Exibido com Sucesso - Dialogo Fixo',
+                sticky: true,
+                position: 'top-right',
+                type: 'success',
+                closeText: '',
+                close: function () {
+                    console.log("toast is closed ...");
+                }
+            });
+
+        }
+        function showNoticeToast() {
+            $().toastmessage('showNoticeToast', "Notice  Dialog ");
+        }
+        function showStickyNoticeToast() {
+            $().toastmessage('showToast', {
+                text: 'Notice Dialog Fixo',
+                sticky: true,
+                position: 'top-left',
+                type: 'notice',
+                closeText: '',
+                close: function () { console.log("toast is closed ..."); }
+            });
+        }
+        function showWarningToast() {
+            $().toastmessage('showWarningToast', "Warning Dialog ");
+        }
+        function showStickyWarningToast() {
+            $().toastmessage('showToast', {
+                text: 'Warning Dialog Fixo',
+                sticky: true,
+                position: 'middle-right',
+                type: 'warning',
+                closeText: '',
+                close: function () {
+                    console.log("toast is closed ...");
+                }
+            });
+        }
+        function showErrorToast() {
+            $().toastmessage('showErrorToast', "Error Dialog  ...");
+        }
+        function showStickyErrorToast() {
+            $().toastmessage('showToast', {
+                text: 'Error Dialog Fixo',
+                sticky: true,
+                position: 'center',
+                type: 'error',
+                closeText: '',
+                close: function () {
+                    console.log("toast is closed ...");
+                }
+            });
+        }
+
+</script>
+    <form method="post" action="resultadoDespesa.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTg4MzgzODc2MA9kFgJmD2QWAgIBD2QWBgIBDxYCHgRocmVmBTdodHRwOi8vMTg3LjExLjEzMy4xNS9Qb3J0YWxkYVRyYW5zcGFyZW5jaWFcZGVmYXVsdC5hc3B4ZAIFDw8WAh4EVGV4dAUxQWdlbmNpYSBSZWd1bGFkb3JhIGRhIEVzdMOibmNpYSBUdXLDrXN0aWNhIGRlIEl0dWRkAgcPZBYCAgEPZBYEZg9kFgYCAQ88KwAWAgAPFgQeD0RhdGFTb3VyY2VCb3VuZGceB1Zpc2libGVnZAYPZBAWCAI2AjcCOAI5AjoCOwI8Aj0WCDwrAAoBABYCHg9Db2xWaXNpYmxlSW5kZXgCATwrAAoBABYCHwQCAjwrAAoBABYCHwQCAzwrAAoBABYCHwQCBDwrAAoBABYCHwQCBTwrAAoBABYCHwQCBjwrAAoBABYCHwQCBzwrAAsBABYCHwQCCA8WCAIBAgECAQIBAgECAQIBAgIWAgWVAURldkV4cHJlc3MuV2ViLkFTUHhHcmlkVmlldy5HcmlkVmlld0RhdGFDb2x1bW4sIERldkV4cHJlc3MuV2ViLkFTUHhHcmlkVmlldy52MTEuMSwgVmVyc2lvbj0xMS4xLjQuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iODhkMTc1NGQ3MDBlNDlhBZkBRGV2RXhwcmVzcy5XZWIuQVNQeEdyaWRWaWV3LkdyaWRWaWV3RGF0YVRleHRDb2x1bW4sIERldkV4cHJlc3MuV2ViLkFTUHhHcmlkVmlldy52MTEuMSwgVmVyc2lvbj0xMS4xLjQuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iODhkMTc1NGQ3MDBlNDlhZAIDDzwrABYCAA8WAh4NQ2FsbGJhY2tTdGF0ZQWYAS93RVdBaDRGVTNSaGRHVUZaRUozWjBoQlFVbENRbmRGUTBGUlkwTkJaMFZJUVhkSlFrSjNVVU5CVVdOR1FXZEZTRUpuU1VKQ2QyTkRRVkZqUVVKM1FVaEJRV05CUWxGQlFVRkpRVXBCWjBGS1FXZEJRMEZCVFVoQ1FVbEJRbmRCUTBGUlkwRkNkMEZEUVZGalFVSjNRVDA9ZAYPZBAWCGYCAQICAgMCBAIFAgYCBxYIPCsACgEAFgIfBGY8KwAKAQAWAh8EAgE8KwAKAQAWAh8EAgI8KwAKAQAWAh8EAgM8KwAKAQAWAh8EAgQ8KwAKAQAWAh8EAgU8KwAKAQAWAh8EAgY8KwALAQAWAh8EAgcPFggCAQIBAgECAQIBAgECAQICFgIFlQFEZXZFeHByZXNzLldlYi5BU1B4R3JpZFZpZXcuR3JpZFZpZXdEYXRhQ29sdW1uLCBEZXZFeHByZXNzLldlYi5BU1B4R3JpZFZpZXcudjExLjEsIFZlcnNpb249MTEuMS40LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQWZAURldkV4cHJlc3MuV2ViLkFTUHhHcmlkVmlldy5HcmlkVmlld0RhdGFUZXh0Q29sdW1uLCBEZXZFeHByZXNzLldlYi5BU1B4R3JpZFZpZXcudjExLjEsIFZlcnNpb249MTEuMS40LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YWQCBQ88KwAWAgAPFgIfBQWYAS93RVdBaDRGVTNSaGRHVUZaRUozWjBoQlFVbENRbmRGUTBGUlkwTkJaMFZJUVhkSlFrSjNVVU5CVVdOR1FXZEZTRUpuU1VKQ2QyTkRRVkZqUVVKM1FVaEJRV05CUWxGQlFVRkpRVXBCWjBGS1FXZEJRMEZCVFVoQ1FVbEJRbmRCUTBGUlkwRkNkMEZEUVZGalFVSjNRVDA9ZAYPZBAWCGYCAQICAgMCBAIFAgYCBxYIPCsACgEAFgIfBGY8KwAKAQAWAh8EAgE8KwAKAQAWAh8EAgI8KwAKAQAWAh8EAgM8KwAKAQAWAh8EAgQ8KwAKAQAWAh8EAgU8KwAKAQAWAh8EAgY8KwALAQAWAh8EAgcPFggCAQIBAgECAQIBAgECAQICFgIFlQFEZXZFeHByZXNzLldlYi5BU1B4R3JpZFZpZXcuR3JpZFZpZXdEYXRhQ29sdW1uLCBEZXZFeHByZXNzLldlYi5BU1B4R3JpZFZpZXcudjExLjEsIFZlcnNpb249MTEuMS40LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQWZAURldkV4cHJlc3MuV2ViLkFTUHhHcmlkVmlldy5HcmlkVmlld0RhdGFUZXh0Q29sdW1uLCBEZXZFeHByZXNzLldlYi5BU1B4R3JpZFZpZXcudjExLjEsIFZlcnNpb249MTEuMS40LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YWQCAQ9kFgICAw9kFgICAQ88KwAHAQQUKwACZGQWAmYPFCsACQ8WAh4OXyFVc2VWaWV3U3RhdGVnZGRkFCsAARYCHglJdGVtQ2xpY2sFQGZ1bmN0aW9uKHMsIGUpIHsNClJlcG9ydFRvb2xiYXIxLmhhbmRsZUJ1dHRvbihlLml0ZW0ubmFtZSk7DQp9DQpkZA9kEBYOZgIBAgICAwIEAgUCBgIHAggCCQIKAgsCDAINFg48KwAMAQAWBB4OUnVudGltZUNyZWF0ZWRnHgROYW1lZTwrAAwBABYEHwhnHwllPCsADAIAFggfCGcfCQUJRmlyc3RQYWdlHwFlHgdUb29sVGlwBQhQcmltZWlyYQIUKwACFgIeA0FsdAUIUHJpbWVpcmEUKwABFgQeCENzc0NsYXNzBRpkeFh0cmFSZXBvcnRzX0J0bkZpcnN0UGFnZR4QRGlzYWJsZWRDc3NDbGFzcwUiZHhYdHJhUmVwb3J0c19CdG5GaXJzdFBhZ2VEaXNhYmxlZDwrAAwCABYIHwhnHwkFDFByZXZpb3VzUGFnZR8BZR8KBQhBbnRlcmlvcgIUKwACFgIfCwUIQW50ZXJpb3IUKwABFgQfDAUZZHhYdHJhUmVwb3J0c19CdG5QcmV2UGFnZR8NBSFkeFh0cmFSZXBvcnRzX0J0blByZXZQYWdlRGlzYWJsZWQ8KwAMAQAWBB8IZx8JZTwrAAwBABYEHwhnHwkFClBhZ2VOdW1iZXI8KwAMAQAWBB8IZx8JZTwrAAwBABYEHwhnHwllPCsADAEAFgQfCGcfCQUJUGFnZUNvdW50PCsADAEAFgQfCGcfCWU8KwAMAgAWCB8IZx8JBQhOZXh0UGFnZR8BZR8KBQhQcsOzeGltYQIUKwACFgIfCwUIUHLDs3hpbWEUKwABFgQfDAUZZHhYdHJhUmVwb3J0c19CdG5OZXh0UGFnZR8NBSFkeFh0cmFSZXBvcnRzX0J0bk5leHRQYWdlRGlzYWJsZWQ8KwAMAgAWCB8IZx8JBQhMYXN0UGFnZR8BZR8KBQfDmmx0aW1hAhQrAAIWAh8LBQfDmmx0aW1hFCsAARYEHwwFGWR4WHRyYVJlcG9ydHNfQnRuTGFzdFBhZ2UfDQUhZHhYdHJhUmVwb3J0c19CdG5MYXN0UGFnZURpc2FibGVkPCsADAEAFgQfCGcfCWU8KwAMAQAWBh8IZx8JZR4KQmVnaW5Hcm91cGdkZGQWAmYPZBYCZg9kFgJmD2QWAmYPZBYCZg9kFgJmD2QWAmYPZBYCZg9kFhRmD2QWAmYPZBYCZg9kFgJmD2QWAmYPPCsABAEADxYCHwJnZGQCAg9kFgJmD2QWAmYPZBYCZg9kFgJmDzwrAAQBAA8WAh8CZ2RkAggPZBYCZg9kFgJmD2QWAmYPZBYCZg88KwAEAQAPFgQfAmceE0Fzc29jaWF0ZWRDb250cm9sSUQFDVBhZ2VOdW1iZXJfV1JkZAIKD2QWAmYPZBYCZg9kFgJmD2QWAmYPPCsABQEADxYCHwJnZGQCDA9kFgJmD2QWAmYPZBYCZg9kFgJmDzwrAAQBAA8WBB8CZx8PBQxQYWdlQ291bnRfV1JkZAIOD2QWAmYPZBYCZg9kFgJmD2QWAmYPPCsABAEADxYCHwJnZGQCEA9kFgJmD2QWAmYPZBYCZg9kFgJmDzwrAAUBAA8WAh8CZ2RkAhIPZBYCZg9kFgJmD2QWAmYPZBYCZg88KwAEAQAPFgIfAmdkZAIYD2QWAmYPZBYCZg9kFgJmD2QWAmYPPCsABAEADxYCHwJnZGQCHQ9kFgJmD2QWAmYPZBYCZg9kFgJmDzwrAAQBAA8WAh8CZ2RkGAIFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYDBR1jdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2MQUxY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndjEkY3RsMDAkRFhFZGl0b3IxJERERAU3Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndjEkY3RsMDAkRFhFZGl0b3IxJERERCRDJEZOUAUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRtbHRSZWxhdG9yaW8PD2RmZPtjx2/2DOWs52PWHre0Z1GjGK9ELUl+rWssyL6m9GJE" />
+</div>
+
+<script type="text/javascript">
+//&lt;![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]&gt;
+</script>
+
+
+<script src="/PortaldaTransparencia/WebResource.axd?d=1zG76KGivfeFsnc2ISvVLTwZ14U_VGCANSuZ5JnCTLU9qZXssGbrxgagpUL8z1V3zwlW0tzTbtFoTxL3b1SVxP2A9wsG4Kz2CkKjYNVyicE1&amp;t=635589363476784022" type="text/javascript"></script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3D9686D0" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAM3xovDvqV/x+zasKtJpt+GkNrVEndlHJbKxakGkK3vZ7+FDkSiVyoQpAa+EGALUVG+M+xpRnFu/nmAhKnUh0njeZZKjWycQJMqz2QhdW8sZQ==" />
+</div>
+    <div id="geral">
+        <div id="topo">
+            <div class="container">
+                <div class="limite">
+                    <div style="display: block; width: 100%">
+                        <div style="display: inline; float: left; width: 65%">
+                            <a href="http://187.11.133.15/PortaldaTransparencia\default.aspx" id="logotipo" title="Voltar para a home" class="logo">
+                                <img src="img/logo_prefeitura.jpg" border="0" usemap="#Map" /></a>
+                            
+                                <p></p>
+                                <h1 class="style1"><span id="Label1" style="font-size:24px;">Portal da Transparência</span></h1>    
+                                <span style="display: inline; padding-left:9px; font-size:small; font-family:Tahoma"><span id="nmC">Agencia Reguladora da Estância Turística de Itu</span> </span>                            
+                        </div>
+                        <div style="display: inline; float: left; width: 5%">
+                             </div>
+                        <div style="display: inline; float: left; width: 35%; vertical-align: bottom; margin-top: 59px; height: 16px;">
+                        © 2015 Copyright CECAM All Rights Reserved.<br />
+                        <a href="http://www.cecam.com.br" target="_blank">www.cecam.com.br</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="container">
+        <div class="limite">
+            <div class="box">
+                <h2 class="titulo" style="color: #000000">Resultados</h2>
+                
+                        <ul class="form">
+                            <p>
+                                <script id="dxis_2049592293" src="/PortaldaTransparencia/DXR.axd?r=1_42-4Ttw8" type="text/javascript"></script><script id="dxis_1348685067" src="/PortaldaTransparencia/DXR.axd?r=1_74-4Ttw8" type="text/javascript"></script><script id="dxis_2080027675" src="/PortaldaTransparencia/DXR.axd?r=1_52-4Ttw8" type="text/javascript"></script><script id="dxis_1267223850" src="/PortaldaTransparencia/DXR.axd?r=1_65-4Ttw8" type="text/javascript"></script><script id="dxis_784139512" src="/PortaldaTransparencia/DXR.axd?r=3_7-4Ttw8" type="text/javascript"></script><script id="dxis_1931430885" src="/PortaldaTransparencia/DXR.axd?r=2_22-4Ttw8" type="text/javascript"></script><script id="dxis_1931431334" src="/PortaldaTransparencia/DXR.axd?r=2_29-4Ttw8" type="text/javascript"></script><script id="dxis_1931430846" src="/PortaldaTransparencia/DXR.axd?r=2_21-4Ttw8" type="text/javascript"></script><script id="dxis_2049592417" src="/PortaldaTransparencia/DXR.axd?r=1_46-4Ttw8" type="text/javascript"></script><script id="dxis_1267223680" src="/PortaldaTransparencia/DXR.axd?r=1_67-4Ttw8" type="text/javascript"></script><script id="dxis_1267223819" src="/PortaldaTransparencia/DXR.axd?r=1_64-4Ttw8" type="text/javascript"></script><script id="dxis_736906337" src="/PortaldaTransparencia/DXR.axd?r=2_16-4Ttw8" type="text/javascript"></script><script id="dxss_715525413" type="text/javascript">
+&lt;!--
+window.__aspxServerFormID = 'form1';
+
+//--&gt;
+</script></p><table class="dxgvControl" cellspacing="0" cellpadding="0" id="ContentPlaceHolder1_gv1" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+	<tbody><tr>
+		<td><table id="ContentPlaceHolder1_gv1_DXMainTable" class="dxgvTable" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;empty-cells:show;">
+			<tbody><tr id="ContentPlaceHolder1_gv1_DXHeadersRow0">
+				<td id="ContentPlaceHolder1_gv1_col0" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv1', this, event);" style="width:1%;border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>Notas</td>
+					</tr>
+				</tbody></table></td><td id="ContentPlaceHolder1_gv1_col54" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv1', this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>Empenho</td>
+					</tr>
+				</tbody></table></td><td id="ContentPlaceHolder1_gv1_col55" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv1', this, event);" style="width:15%;border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>CPF/CNPJ</td>
+					</tr>
+				</tbody></table></td><td id="ContentPlaceHolder1_gv1_col56" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv1', this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>Fornecedor</td>
+					</tr>
+				</tbody></table></td><td id="ContentPlaceHolder1_gv1_col57" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv1', this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>Descrição</td>
+					</tr>
+				</tbody></table></td><td id="ContentPlaceHolder1_gv1_col58" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv1', this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>Funcional</td>
+					</tr>
+				</tbody></table></td><td id="ContentPlaceHolder1_gv1_col59" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv1', this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>Mod. Lic.</td>
+					</tr>
+				</tbody></table></td><td id="ContentPlaceHolder1_gv1_col60" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv1', this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>Licitação</td>
+					</tr>
+				</tbody></table></td><td id="ContentPlaceHolder1_gv1_col61" class="dxgvHeader" onmousedown="aspxGVHeaderMouseDown('ContentPlaceHolder1_gv1', this, event);" style="border-top-width:0px;border-left-width:0px;border-right-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<td>Valor Empenhado (R$)</td>
+					</tr>
+				</tbody></table></td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXDataRow0" class="dxgvDataRow">
+				<td class="dxgvCommandColumn dxgv" align="center"><a class="dxgvCommandColumnItem dxgv__cci" href="javascript:aspxGVCommandCustomButton('ContentPlaceHolder1_gv1','Nota',0);">Nota</a></td><td class="dxgv" align="right">16</td><td class="dxgv">..-                 </td><td class="dxgv">FOLHA DE PAGAMENTO                                </td><td class="dxgv">, DESPESAS COM FOLHA DE PAGAMENTO DE SERVIDORES DESTA AUTARQUIA NO MES DE JANEIRO DE 2013.</td><td class="dxgv">5014 - 2234 - 17512 - 31901101 - 0111000</td><td class="dxgv">OUTROS/NÃO APLICÁVEL</td><td class="dxgv">/0</td><td class="dxgv" align="right" style="border-right-width:0px;">22.722,73</td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXDataRow1" class="dxgvDataRow">
+				<td class="dxgvCommandColumn dxgv" align="center"><a class="dxgvCommandColumnItem dxgv__cci" href="javascript:aspxGVCommandCustomButton('ContentPlaceHolder1_gv1','Nota',1);">Nota</a></td><td class="dxgv" align="right">17</td><td class="dxgv">..-                 </td><td class="dxgv">FOLHA DE PAGAMENTO                                </td><td class="dxgv">, DESPESAS COM FOLHA DE PAGAMENTO DE SERVIDORES DESTA AUTARQUIA NO MES DE JANEIRO DE 2013.</td><td class="dxgv">5014 - 2234 - 17512 - 31901101 - 0111000</td><td class="dxgv">OUTROS/NÃO APLICÁVEL</td><td class="dxgv">/0</td><td class="dxgv" align="right" style="border-right-width:0px;">10.496,66</td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXDataRow2" class="dxgvDataRow">
+				<td class="dxgvCommandColumn dxgv" align="center"><a class="dxgvCommandColumnItem dxgv__cci" href="javascript:aspxGVCommandCustomButton('ContentPlaceHolder1_gv1','Nota',2);">Nota</a></td><td class="dxgv" align="right">9</td><td class="dxgv">068.188.051/0001-22 </td><td class="dxgv">SATYRO FRANCESCHINELLI &amp; FRANCESCHINELLI          </td><td class="dxgv">, AQUISIÇÃO DE COMBUSTIVEL, GASOLINA COMUM, PARA UTILIZAÇÃO NOS VEÍCULOS DESTA AUTARQUIA.</td><td class="dxgv">5014 - 2234 - 17512 - 33903001 - 0411000</td><td class="dxgv">PREGÃO</td><td class="dxgv">4/2011</td><td class="dxgv" align="right" style="border-right-width:0px;">70,05</td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXDataRow3" class="dxgvDataRow">
+				<td class="dxgvCommandColumn dxgv" align="center"><a class="dxgvCommandColumnItem dxgv__cci" href="javascript:aspxGVCommandCustomButton('ContentPlaceHolder1_gv1','Nota',3);">Nota</a></td><td class="dxgv" align="right">10</td><td class="dxgv">068.188.051/0001-22 </td><td class="dxgv">SATYRO FRANCESCHINELLI &amp; FRANCESCHINELLI          </td><td class="dxgv">, REEMPENHO DE DESPESAS COM COMBUSTIVEIS, GASOLINA COMUM, PARA USO DOS VEÍCULOS DESTA AUTARQUIA, CONFORME CONTRATO N.º 006/2012.</td><td class="dxgv">5014 - 2234 - 17512 - 33903001 - 0411000</td><td class="dxgv">PREGÃO</td><td class="dxgv">4/2011</td><td class="dxgv" align="right" style="border-right-width:0px;">2.578,97</td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXDataRow4" class="dxgvDataRow">
+				<td class="dxgvCommandColumn dxgv" align="center"><a class="dxgvCommandColumnItem dxgv__cci" href="javascript:aspxGVCommandCustomButton('ContentPlaceHolder1_gv1','Nota',4);">Nota</a></td><td class="dxgv" align="right">11</td><td class="dxgv">000.029.160/0001-63 </td><td class="dxgv">AGRO COMERCIAL DA VARGEM LTDA.                    </td><td class="dxgv">, AQUISIÇÃO DE CESTAS BASICAS PARA OS FUNCIONÁRIOS DESTA AUTARQUIA, CONFORME TERMOS DO CONTRATO N.º 001/2011.</td><td class="dxgv">5014 - 2234 - 17512 - 33903007 - 0411000</td><td class="dxgv">PREGÃO</td><td class="dxgv">1/2011</td><td class="dxgv" align="right" style="border-right-width:0px;">20.280,00</td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXDataRow5" class="dxgvDataRow">
+				<td class="dxgvCommandColumn dxgv" align="center"><a class="dxgvCommandColumnItem dxgv__cci" href="javascript:aspxGVCommandCustomButton('ContentPlaceHolder1_gv1','Nota',5);">Nota</a></td><td class="dxgv" align="right">15</td><td class="dxgv">004.308.145/0001-05 </td><td class="dxgv">BAPTISTA &amp; LA TERZA ADVOGADOS ASSOCIADOS          </td><td class="dxgv">, REEMPENHO DO CONTRATO N.º 002/2010, REFERENTE A CONTRATAÇÃO DE BANCA DE ADVOGADOS ESPECIALIZADOS EM CONSULTORIA E ASSESSORIA JURIDICA PARA ESTA AUTARQUIA.</td><td class="dxgv">5014 - 2234 - 17512 - 33903501 - 0111000</td><td class="dxgv">INEXIGÍVEL</td><td class="dxgv">/0</td><td class="dxgv" align="right" style="border-right-width:0px;">15.000,00</td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXDataRow6" class="dxgvDataRow">
+				<td class="dxgvCommandColumn dxgv" align="center"><a class="dxgvCommandColumnItem dxgv__cci" href="javascript:aspxGVCommandCustomButton('ContentPlaceHolder1_gv1','Nota',6);">Nota</a></td><td class="dxgv" align="right">12</td><td class="dxgv">012.287.297/0001-05 </td><td class="dxgv">PLUGIN-SOLUÇÕES EM INFORMÁTICA LTDA. ME.          </td><td class="dxgv">, REEMPENHO DE SERVIÇOS DE INFORMÁTICA: HARDWARE, SOFTWARE, SEGURANÇA EM TI., CONFORME TERMOS DO CONTRATO N.º 005/2011.</td><td class="dxgv">5014 - 2234 - 17512 - 33903905 - 0411000</td><td class="dxgv">CONVITE</td><td class="dxgv">2/2011</td><td class="dxgv" align="right" style="border-right-width:0px;">30.000,00</td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXDataRow7" class="dxgvDataRow">
+				<td class="dxgvCommandColumn dxgv" align="center"><a class="dxgvCommandColumnItem dxgv__cci" href="javascript:aspxGVCommandCustomButton('ContentPlaceHolder1_gv1','Nota',7);">Nota</a></td><td class="dxgv" align="right">13</td><td class="dxgv">000.626.646/0001-89 </td><td class="dxgv">CECAM CONSULTORIA ECONOMICA CONTÁBIL E ADM.  MUNIC</td><td class="dxgv">, REEMPENHO DE CONTRATO DE PRESTAÇÃO DE SERVIÇOS COM FORNECIMENTO DE SISTEMAS INFORMATIZADOS PARA MICROCOMPUTADORES, PARA INFORMATIZAÇÃO DE DIVERSOS SETORES DESTA AUTARQUIA.</td><td class="dxgv">5014 - 2234 - 17512 - 33903911 - 0411000</td><td class="dxgv">PREGÃO</td><td class="dxgv">2/2010</td><td class="dxgv" align="right" style="border-right-width:0px;">31.773,85</td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXDataRow8" class="dxgvDataRow">
+				<td class="dxgvCommandColumn dxgv" align="center"><a class="dxgvCommandColumnItem dxgv__cci" href="javascript:aspxGVCommandCustomButton('ContentPlaceHolder1_gv1','Nota',8);">Nota</a></td><td class="dxgv" align="right">14</td><td class="dxgv">000.382.254/0001-11 </td><td class="dxgv">ALEXANDRE GALVÃO ZACHARIAS FILHO EPP              </td><td class="dxgv">, REEMPENHO DO CONTRATO N.º 003/2011, REFERENTE A LOCAÇÃO DE MÁQUINAS E EQUIPAMENTOS DE REPROGRAFIA PARA USO NESTA AUTARQUIA.</td><td class="dxgv">5014 - 2234 - 17512 - 33903912 - 0411000</td><td class="dxgv">PREGÃO</td><td class="dxgv">3/2011</td><td class="dxgv" align="right" style="border-right-width:0px;">6.600,01</td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXDataRow9" class="dxgvDataRow">
+				<td class="dxgvCommandColumn dxgv" align="center"><a class="dxgvCommandColumnItem dxgv__cci" href="javascript:aspxGVCommandCustomButton('ContentPlaceHolder1_gv1','Nota',9);">Nota</a></td><td class="dxgv" align="right">1</td><td class="dxgv">..-                 </td><td class="dxgv">INSS - INSTITUTO NACIONAL DO SEGURO SOCIAL        </td><td class="dxgv">, DESPESAS COM MULTAS E JUROS PELO ATRASO NO PAGAMENTO DO INSS, REFERENTE AO MES DE NOVEMBRO DE 2012.</td><td class="dxgv">5014 - 2234 - 17512 - 33903937 - 0411000</td><td class="dxgv">OUTROS/NÃO APLICÁVEL</td><td class="dxgv">/0</td><td class="dxgv" align="right" style="border-right-width:0px;">494,83</td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXDataRow10" class="dxgvDataRow">
+				<td class="dxgvCommandColumn dxgv" align="center"><a class="dxgvCommandColumnItem dxgv__cci" href="javascript:aspxGVCommandCustomButton('ContentPlaceHolder1_gv1','Nota',10);">Nota</a></td><td class="dxgv" align="right">7</td><td class="dxgv">004.164.616/0001-59 </td><td class="dxgv">TNL PCS S.A                                       </td><td class="dxgv">, ESTIMATIVO DE GASTOS COM SERVIÇOS DE TELEFONIA MÓVEL PARA USO DA DIRETORIA DESTA AUTARQUIA NO EXERCÍCIO DE 2013.</td><td class="dxgv">5014 - 2234 - 17512 - 33903958 - 0411000</td><td class="dxgv">OUTROS/NÃO APLICÁVEL</td><td class="dxgv">/0</td><td class="dxgv" align="right" style="border-right-width:0px;">7.800,00</td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXDataRow11" class="dxgvDataRow">
+				<td class="dxgvCommandColumn dxgv" align="center"><a class="dxgvCommandColumnItem dxgv__cci" href="javascript:aspxGVCommandCustomButton('ContentPlaceHolder1_gv1','Nota',11);">Nota</a></td><td class="dxgv" align="right">6</td><td class="dxgv">050.232.313/0001-43 </td><td class="dxgv">OTTONI &amp; CIA LTDA                                 </td><td class="dxgv">, ESTIMATIVO DE GASTOS COM SERVIÇOS DE CÓPIAS XEROGRÁFICAS E ENCADERNAÇÕES, PARA O EXERCÍCIO DE 2013.</td><td class="dxgv">5014 - 2234 - 17512 - 33903983 - 0411000</td><td class="dxgv">OUTROS/NÃO APLICÁVEL</td><td class="dxgv">/0</td><td class="dxgv" align="right" style="border-right-width:0px;">7.600,00</td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXDataRow12" class="dxgvDataRow">
+				<td class="dxgvCommandColumn dxgv" align="center"><a class="dxgvCommandColumnItem dxgv__cci" href="javascript:aspxGVCommandCustomButton('ContentPlaceHolder1_gv1','Nota',12);">Nota</a></td><td class="dxgv" align="right">3</td><td class="dxgv">048.066.047/0001-84 </td><td class="dxgv">IMESP IMPRENSA OFICIAL DO ESTADO SAO PAULO        </td><td class="dxgv">, PRESTAÇÃO DE SERVIÇOS DE PUBLICAÇÃO LEGAL, ESTIMATIVO DE GASTOS PARA O EXERCÍCIO DE 2013.</td><td class="dxgv">5014 - 2234 - 17512 - 33903990 - 0411000</td><td class="dxgv">INEXIGÍVEL</td><td class="dxgv">/0</td><td class="dxgv" align="right" style="border-right-width:0px;">12.000,00</td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXDataRow13" class="dxgvDataRow">
+				<td class="dxgvCommandColumn dxgv" align="center"><a class="dxgvCommandColumnItem dxgv__cci" href="javascript:aspxGVCommandCustomButton('ContentPlaceHolder1_gv1','Nota',13);">Nota</a></td><td class="dxgv" align="right">4</td><td class="dxgv">013.265.623/0001-38 </td><td class="dxgv">JORNAL FOLHA DA CIDADE DE ITU LTDA ME.            </td><td class="dxgv">, ESTIMATIVO DE GASTOS COM SERVIÇOS DE PUBLICAÇÃO LEGAL EM JORNAL LOCAL, PARA O EXERCÍCIO DE 2013.</td><td class="dxgv">5014 - 2234 - 17512 - 33903990 - 0411000</td><td class="dxgv">OUTROS/NÃO APLICÁVEL</td><td class="dxgv">/0</td><td class="dxgv" align="right" style="border-right-width:0px;">5.900,00</td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXDataRow14" class="dxgvDataRow">
+				<td class="dxgvCommandColumn dxgv" align="center"><a class="dxgvCommandColumnItem dxgv__cci" href="javascript:aspxGVCommandCustomButton('ContentPlaceHolder1_gv1','Nota',14);">Nota</a></td><td class="dxgv" align="right">5</td><td class="dxgv">050.233.915/0001-15 </td><td class="dxgv">ASSOCIACAO SAO PAULO DA BOA IMPRENSA              </td><td class="dxgv">, ESTIMATIVO DE GASTOS COM SERVIÇOS DE PUBLICAÇÃO LEGAL, EM JORNAL LOCAL, PARA O EXERCÍCIO DE 2013.</td><td class="dxgv">5014 - 2234 - 17512 - 33903990 - 0411000</td><td class="dxgv">OUTROS/NÃO APLICÁVEL</td><td class="dxgv">/0</td><td class="dxgv" align="right" style="border-right-width:0px;">2.000,00</td>
+			</tr><tr id="ContentPlaceHolder1_gv1_DXFooterRow" class="dxgvFooter">
+				<td class="dxgv"> </td><td class="dxgv" style="text-align:Right;"> </td><td class="dxgv"> </td><td class="dxgv"> </td><td class="dxgv"> </td><td class="dxgv"> </td><td class="dxgv"> </td><td class="dxgv"> </td><td class="dxgv" style="text-align:Right;border-right-width:0px;">Valor Total : 182.506,10</td>
+			</tr>
+		</tbody></table><img id="ContentPlaceHolder1_gv1_IADD" class="dxGridView_gvDragAndDropArrowDown" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="|" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ContentPlaceHolder1_gv1_IADU" class="dxGridView_gvDragAndDropArrowUp" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="|" style="position:absolute;visibility:hidden;top:-100px;" /><img id="ContentPlaceHolder1_gv1_IDHF" class="dxGridView_gvDragAndDropHideColumn" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="Hide" style="position:absolute;visibility:hidden;top:-100px;" /><div class="dxgvPagerBottomPanel">
+			<table class="dxpControl" cellspacing="0" cellpadding="0" id="ContentPlaceHolder1_gv1_DXPagerBottom" style="border-collapse:collapse;border-collapse:separate;">
+				<tbody><tr>
+					<td class="dxpCtrl"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+						<tbody><tr>
+							<td class="dxpSummary" style="white-space:nowrap;">Página 1 de 2 (17 itens)</td><td style="width:4px;"><div style="height:1px;width:4px;overflow:hidden;">
+
+							</div></td><td class="dxpButton dxpDisabledButton dxpDisabled"><img class="dxWeb_pPrevDisabled" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="Prev" /></td><td style="width:4px;"><div style="height:1px;width:4px;overflow:hidden;">
+
+							</div></td><td class="dxpPageNumber dxpCurrentPageNumber">[1]</td><td style="width:4px;"><div style="height:1px;width:4px;overflow:hidden;">
+
+							</div></td><td class="dxpPageNumber" onclick="aspxGVPagerOnClick('ContentPlaceHolder1_gv1','PN1');" style="cursor:pointer;">2</td><td style="width:4px;"><div style="height:1px;width:4px;overflow:hidden;">
+
+							</div></td><td class="dxpButton" onclick="aspxGVPagerOnClick('ContentPlaceHolder1_gv1','PBN');" style="cursor:pointer;"><img class="dxWeb_pNext" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="Next" /></td>
+						</tr>
+					</tbody></table></td>
+				</tr>
+			</tbody></table>
+		</div><table id="ContentPlaceHolder1_gv1_LP" class="dxgvLoadingPanel" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+			<tbody><tr>
+				<td class="dx"><img src="/PortaldaTransparencia/DXR.axd?r=3_3-4Ttw8" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;">Loading…</td>
+			</tr>
+		</tbody></table><div id="ContentPlaceHolder1_gv1_LD" class="dxgvLoadingDiv" style="display:none;z-index:29999;position:absolute;">
+
+		</div><input type="hidden" name="ctl00$ContentPlaceHolder1$gv1$DXSelInput" id="ContentPlaceHolder1_gv1_DXSelInput" /><table id="ContentPlaceHolder1_gv1_DXStyleTable" style="display:none;">
+			<tbody><tr>
+				<td></td>
+			</tr><tr class="dxgvEditingErrorRow">
+				<td class="dxgv" colspan="9" style="border-right-width:0px;"></td>
+			</tr><tr class="dxgvSelectedRow">
+				<td></td>
+			</tr><tr class="dxgvFocusedRow">
+				<td></td>
+			</tr><tr class="dxgvFocusedGroupRow">
+				<td></td>
+			</tr><tr class="dxgvDataRow">
+				<td></td>
+			</tr><tr class="dxgvDataRow">
+				<td></td>
+			</tr><tr class="dxgvDataRow">
+				<td></td>
+			</tr><tr class="dxgvDataRow">
+				<td></td>
+			</tr><tr class="dxgvDataRow">
+				<td></td>
+			</tr><tr class="dxgvDataRow">
+				<td></td>
+			</tr><tr class="dxgvDataRow">
+				<td></td>
+			</tr><tr class="dxgvDataRow">
+				<td></td>
+			</tr><tr class="dxgvDataRow">
+				<td></td>
+			</tr><tr class="dxgvDataRow">
+				<td></td>
+			</tr><tr class="dxgvDataRow">
+				<td></td>
+			</tr><tr class="dxgvDataRow">
+				<td></td>
+			</tr><tr class="dxgvDataRow">
+				<td></td>
+			</tr><tr class="dxgvDataRow">
+				<td></td>
+			</tr><tr class="dxgvDataRow">
+				<td></td>
+			</tr>
+		</tbody></table><input type="hidden" name="ctl00$ContentPlaceHolder1$gv1$CallbackState" id="ContentPlaceHolder1_gv1_CallbackState" value="/wEWAh4FU3RhdGUFzANCejRIQUFJQkJ2Ly9BZ0FHLy84Q0FBYi8vd0lBQnYvL0FnQUcvLzhDQUFiLy93SUFCdi8vQWdBRy8vOENBQWIvL3dJQUJ2Ly9BZ0FHLy84Q0FBYi8vd0lBQnYvL0FnQUcvLzhDQUFiLy93SUFCdi8vQWdBRy8vOENBQWIvL3dJQUJ2Ly9BZ0FHLy84Q0FBYi8vd0lBQnYvL0FnQUcvLzhDQUFiLy93SUFCdi8vQWdBRy8vOENBQWIvL3dJQUJ2Ly9BZ0FHLy84Q0FBYi8vd0lBQnYvL0FnQUcvLzhDQUFiLy93SUFCdi8vQWdBRy8vOENBQWIvL3dJQUJ2Ly9BZ0FHLy84Q0FBYi8vd0lBQnYvL0FnQUcvLzhDQUFiLy93SUFCdi8vQWdBRy8vOENBQWIvL3dJQUJ2Ly9BZ0FHLy84Q0FBYi8vd0lBQnYvL0FnQUcvLzhDQUFiLy93SUFCdi8vQWdBRy8vOENBQWNCQWdFSEFnSUJCd01DQVFjRUFnRUhCUUlCQndZQ0FRY0hBZ0VIQ0FJQkJ3QUhBQWNBQndBRkFBQUFnQWtDQUFrQ0FBSUFBd2NFQWdBSEFBSUJCd0FIQUFJQkJ3QUhBQT09" /></td>
+	</tr>
+</tbody></table><script id="dxss_349612161" type="text/javascript">
+&lt;!--
+
+var dxo = new ASPxClientGridView('ContentPlaceHolder1_gv1');
+window['gv1'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$gv1',arg,aspxCallback,'ContentPlaceHolder1_gv1',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$gv1';
+dxo.callBacksEnabled=false;
+dxo.pageRowCount=15;
+dxo.pageRowSize=15;
+dxo.pageIndex=0;
+dxo.pageCount=2;
+dxo.selectedWithoutPageRowCount=0;
+dxo.visibleStartIndex=0;
+dxo.focusedRowIndex=-1;
+dxo.allowFocusedRow=false;
+dxo.isColumnsResizable=false;
+dxo.isVerticalScrolling=false;
+dxo.isHorizontalScrolling=false;
+dxo.isMainControlResizable=false;
+dxo.indentColumnCount=0;
+dxo.callbackOnFocusedRowChanged=false;
+dxo.callbackOnSelectionChanged=false;
+dxo.autoFilterDelay='1200';
+dxo.columns = [new ASPxClientGridViewColumn('',0,-1,null,1,'',0,0,1,0),
+new ASPxClientGridViewColumn('',1,-1,'DT_EMPENHO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',2,-1,'NM_EMPENHOTIPO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',3,-1,'cd_pedido',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',4,-1,'DS_PROCESSO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',5,-1,'CD_FICHA',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',6,-1,'DS_BANCO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',7,-1,'DS_AGENCIA',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',8,-1,'DS_DIG_AGENCIA',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',9,-1,'DS_CONTA',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',10,-1,'DS_DIG_CONTA',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',11,-1,'DS_ENDERECO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',12,-1,'DS_UF',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',13,-1,'DS_CEP',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',14,-1,'DS_LOCAL_ENTREGA',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',15,-1,'DS_PRAZO_ENTREGA',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',16,-1,'DS_VALIDADE',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',17,-1,'CD_ORGAO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',18,-1,'NM_ORGAO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',19,-1,'CD_UNIDADEORCAMENTARIA',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',20,-1,'NM_UNIDADEORCAMENTARIA',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',21,-1,'CD_UNIDADEEXECUTORA',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',22,-1,'NM_UNIDADEEXECUTORA',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',23,-1,'CD_FUNCAO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',24,-1,'CD_SUBFUNCAO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',25,-1,'CD_PROGRAMA',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',26,-1,'CD_ACAO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',27,-1,'NM_ACAO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',28,-1,'NM_ACAO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',29,-1,'CD_CATEGORIA',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',30,-1,'NM_CATEGORIA',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',31,-1,'CD_ATUACAO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',32,-1,'CD_RECURSO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',33,-1,'NM_RECURSO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',34,-1,'CD_ATIVONAOFINANCEIRO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',35,-1,'DS_ATIVONAOFINANCEIRO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',36,-1,'CD_PASSIVONAOFINANCEIRO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',37,-1,'DS_PASSIVONAOFINANCEIRO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',38,-1,'VL_DOTACAOATUAL',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',39,-1,'VL_EMPENHADOANTERIOR',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',40,-1,'VL_EMPENHADO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',41,-1,'VL_SALDO',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',42,-1,'VL_COTA1',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',43,-1,'VL_COTA2',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',44,-1,'VL_COTA3',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',45,-1,'VL_COTA4',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',46,-1,'VL_COTA5',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',47,-1,'VL_COTA6',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',48,-1,'VL_COTA7',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',49,-1,'VL_COTA8',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',50,-1,'VL_COTA9',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',51,-1,'VL_COTA10',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',52,-1,'VL_COTA11',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',53,-1,'VL_COTA12',0,'',1,1,1,1),
+new ASPxClientGridViewColumn('',54,-1,'CD_EMPENHO',1,'',1,1,1,0),
+new ASPxClientGridViewColumn('',55,-1,'NR_CPFCNPJ',1,'',1,1,1,0),
+new ASPxClientGridViewColumn('',56,-1,'NM_FORNECEDOR',1,'',1,1,1,0),
+new ASPxClientGridViewColumn('',57,-1,'DS_HISTORICO',1,'',1,1,1,0),
+new ASPxClientGridViewColumn('',58,-1,'DS_FUNCIONALPROGRAMATICA',1,'',1,1,1,0),
+new ASPxClientGridViewColumn('',59,-1,'TP_MODALIDADE',1,'',1,1,1,0),
+new ASPxClientGridViewColumn('',60,-1,'NR_LICITACAO',1,'',1,1,1,0),
+new ASPxClientGridViewColumn('',61,-1,'VL_EMPENHADO',1,'',1,1,1,0)];
+dxo.editState=0;
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+                            <p></p>
+                            <p>
+                                
+                            </p>
+                            <p>
+                                
+                            </p>
+                            <p>
+                                
+                            </p>
+                            <li class="botoes">
+                                <input type="submit" name="ctl00$ContentPlaceHolder1$btnEnviar" value="voltar" id="ContentPlaceHolder1_btnEnviar" class="btazul" style="margin-right: 0px" />
+                            </li>
+                        </ul>
+                    
+                
+            </div>
+            <div class="box">
+            </div>
+        </div>
+    </div>
+
+        
+    </div>
+    
+
+<script type="text/javascript">
+//&lt;![CDATA[
+
+WebForm_InitCallback();//]]&gt;
+</script>
+<input type="hidden" name="DXScript" value="1_42,1_74,1_52,1_65,3_7,2_22,2_29,2_21,1_46,1_67,1_64,2_16" /></form>
+
+
+</body></html>

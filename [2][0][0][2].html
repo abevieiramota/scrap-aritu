@@ -1,0 +1,1519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=1_4-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=2_2-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=2_1-4Ttw8" /><link rel="stylesheet" type="text/css" href="/PortaldaTransparencia/DXR.axd?r=2_0-4Ttw8" /><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>
+	Portal da Transparência.
+    
+</title><link href="css/template.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        .style1
+        {
+            float: right;
+            margin: 35px 0 0 0;
+            font: bold 25pt Arial, Helvetica, sans-serif;
+            color: #000000;
+        }
+    </style>
+<style type="text/css" media="screen">#piecemaker {visibility:hidden}</style><style></style><link rel="stylesheet" href="./css/contentflow.css" type="text/css" media="screen" /><link href="jquery-toastmessage/src/main/resources/css/jquery.toastmessage.css" rel="stylesheet" type="text/css" /></head>
+<body>
+    <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="js/vticker.js"></script>
+    <script language="javascript" type="text/javascript" src="js/swfobject/swfobject.js"></script>
+    <script language="javascript" type="text/javascript" src="js/contentflow.js"></script>
+    <script type="text/javascript">
+
+//        $(function () {
+//            var ticker = $('#itens').vTicker({
+//                speed: 500,
+//                pause: 5000,
+//                height: 310,
+//                animation: 'fade',
+//                mousePause: true,
+//                showItems: 3
+//            });
+
+//            $('.botaobaixo').click(function () {
+//                ticker.vTickerMoveDown();
+//            });
+//            $('.botaocima').click(function () {
+//                ticker.vTickerMoveUp();
+//            });
+
+//        });
+
+
+
+        var flashvars = {};
+        flashvars.cssSource = "css/piecemaker.css";
+        flashvars.xmlSource = "piecemaker.xml";
+
+        var params = {};
+        params.play = "false";
+        params.menu = "false";
+        params.scale = "showall";
+        params.wmode = "transparent";
+        params.allowfullscreen = "false";
+        params.allowscriptaccess = "always";
+        params.allownetworking = "all";
+
+        swfobject.embedSWF('piecemaker.swf', 'piecemaker', '956', '380', '10', null, flashvars, params, null);
+
+    </script>
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>    
+    <script src="jquery-toastmessage/src/main/javascript/jquery.toastmessage.js" type="text/javascript"></script>    
+    
+    <script type="text/javascript">
+
+        function showSuccessToast() {
+            $().toastmessage('showSuccessToast', "Dialogo Exibido com Sucesso...");
+        }
+        function showStickySuccessToast() {
+            $().toastmessage('showToast', {
+                text: 'Dialogo Exibido com Sucesso - Dialogo Fixo',
+                sticky: true,
+                position: 'top-right',
+                type: 'success',
+                closeText: '',
+                close: function () {
+                    console.log("toast is closed ...");
+                }
+            });
+
+        }
+        function showNoticeToast() {
+            $().toastmessage('showNoticeToast', "Notice  Dialog ");
+        }
+        function showStickyNoticeToast() {
+            $().toastmessage('showToast', {
+                text: 'Notice Dialog Fixo',
+                sticky: true,
+                position: 'top-left',
+                type: 'notice',
+                closeText: '',
+                close: function () { console.log("toast is closed ..."); }
+            });
+        }
+        function showWarningToast() {
+            $().toastmessage('showWarningToast', "Warning Dialog ");
+        }
+        function showStickyWarningToast() {
+            $().toastmessage('showToast', {
+                text: 'Warning Dialog Fixo',
+                sticky: true,
+                position: 'middle-right',
+                type: 'warning',
+                closeText: '',
+                close: function () {
+                    console.log("toast is closed ...");
+                }
+            });
+        }
+        function showErrorToast() {
+            $().toastmessage('showErrorToast', "Error Dialog  ...");
+        }
+        function showStickyErrorToast() {
+            $().toastmessage('showToast', {
+                text: 'Error Dialog Fixo',
+                sticky: true,
+                position: 'center',
+                type: 'error',
+                closeText: '',
+                close: function () {
+                    console.log("toast is closed ...");
+                }
+            });
+        }
+
+</script>
+    <form method="post" action="" id="form1">
+<div class="aspNetHidden">
+
+
+
+</div>
+
+<script type="text/javascript">
+//&lt;![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]&gt;
+</script>
+
+
+<script src="/PortaldaTransparencia/WebResource.axd?d=1zG76KGivfeFsnc2ISvVLTwZ14U_VGCANSuZ5JnCTLU9qZXssGbrxgagpUL8z1V3zwlW0tzTbtFoTxL3b1SVxP2A9wsG4Kz2CkKjYNVyicE1&amp;t=635589363476784022" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//&lt;![CDATA[
+var __cultureInfo = {"name":"pt-BR","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":".","CurrencySymbol":"R$","NaNSymbol":"NaN (Não é um número)","CurrencyNegativePattern":9,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-Infinito","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":".","CurrencyPositivePattern":2,"PositiveInfinitySymbol":"+Infinito","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":".","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135589600000)\/","MaxSupportedDateTime":"\/Date(253402300799999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":0,"FullDateTimePattern":"dddd, d\u0027 de \u0027MMMM\u0027 de \u0027yyyy HH:mm:ss","LongDatePattern":"dddd, d\u0027 de \u0027MMMM\u0027 de \u0027yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d\u0027 de \u0027MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM\u0027 de \u0027yyyy","AbbreviatedDayNames":["dom","seg","ter","qua","qui","sex","sáb"],"ShortestDayNames":["D","S","T","Q","Q","S","S"],"DayNames":["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"],"AbbreviatedMonthNames":["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez",""],"MonthNames":["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro",""],"IsReadOnly":true,"NativeCalendarName":"Calendário gregoriano","AbbreviatedMonthGenitiveNames":["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez",""],"MonthGenitiveNames":["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro",""]},"eras":[1,"d.C.",null,0]};//]]&gt;
+</script>
+
+<script src="/PortaldaTransparencia/ScriptResource.axd?d=ltLYuQB0cRLg8P0P43KW_Af9AueayMtr69WrcteHWOdM0WqKNiBbe_Ia9KN6TMlEa-jMJaQy5EShjPVbPJts8a4WXharZE3z7hZe0JqHuiXQLeaG-eVFKp92NCalVIC2QMLe736XLmY5NF-AzuqzmD39eLSdpoR_nWg0kxsD0tk1&amp;t=ffffffff805766b3" type="text/javascript"></script>
+<script src="/PortaldaTransparencia/ScriptResource.axd?d=gcBWM3-WD1CV0lXpah3l7xNge9rX5W7--odPXdOqFr0Z4rBshrF2T7GJrLbqxNXORFVkbru6-w7PUf1IK-T3-DhxATJ4dRJms02cpD3w1VrK7LMsxxLG4p8YANxRrT8jGxXvy1LNuuFwFOe986XsTvuqzBVm43SwfK7O9F06B4EkgbunzKPMI9UeTUFdGmfR0&amp;t=ffffffff805766b3" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	
+	
+</div>
+    <div id="geral">
+        <div id="topo">
+            <div class="container">
+                <div class="limite">
+                    <div style="display: block; width: 100%">
+                        <div style="display: inline; float: left; width: 65%">
+                            <a href="http://187.11.133.15/PortaldaTransparencia\default.aspx" id="logotipo" title="Voltar para a home" class="logo">
+                                <img src="img/logo_prefeitura.jpg" border="0" usemap="#Map" /></a>
+                            
+                                <p></p>
+                                <h1 class="style1"><span style="font-size:24px;">Portal da Transparência</span></h1>    
+                                <span style="display: inline; padding-left:9px; font-size:small; font-family:Tahoma"><span id="nmC">Agencia Reguladora da Estância Turística de Itu</span> </span>                     
+                        </div>
+                        <div style="display: inline; float: left; width: 5%">
+                             </div>
+                        <div style="display: inline; float: left; width: 35%; vertical-align: bottom; margin-top: 59px; height: 16px;">
+                        © 2015 Copyright CECAM All Rights Reserved.<br />
+                        <a href="http://www.cecam.com.br" target="_blank">www.cecam.com.br</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <script type="text/javascript">
+//&lt;![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ScriptManagerMaster1', 'form1', ['tctl00$ContentPlaceHolder1$upnCadastro','upnCadastro'], [], [], 900, 'ctl00');
+//]]&gt;
+</script>
+
+    <div id="upnCadastro">
+            <div id="home" class="meio">
+                <div class="container">
+                    <div class="limite">
+                        <div class="esquerda">
+                            <div class="box">
+                                <h2 class="titulo">Despesas</h2>
+                                <ul class="form">
+                                    <li><span class="titulo">Exercício:</span>
+                                        <script id="dxss_715525413" type="text/javascript">
+&lt;!--
+window.__aspxServerFormID = 'form1';
+
+//--&gt;
+</script><table class="dxeButtonEdit" cellspacing="1" cellpadding="0" id="ContentPlaceHolder1_ddlExercicio" style="background-color:White;width:50%;">
+	<tbody><tr>
+		<td style="display:none;"><input id="ContentPlaceHolder1_ddlExercicio_VI" name="ContentPlaceHolder1_ddlExercicio_VI" type="hidden" value="2013" /></td><td class="dxic" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlExercicio', event)" style="width:100%;padding-left:1px;padding-right:1px;padding-top:1px;padding-bottom:1px;"><input class="dxeEditArea dxeEditAreaSys" name="ctl00$ContentPlaceHolder1$ddlExercicio" value="2013" id="ContentPlaceHolder1_ddlExercicio_I" onchange="aspxETextChanged('ContentPlaceHolder1_ddlExercicio')" onblur="aspxELostFocus('ContentPlaceHolder1_ddlExercicio')" onfocus="aspxEGotFocus('ContentPlaceHolder1_ddlExercicio')" type="text" onkeydown="aspxEKeyDown('ContentPlaceHolder1_ddlExercicio', event)" style="background-color:White;height:15px;" autocomplete="off" /></td><td id="ContentPlaceHolder1_ddlExercicio_B-1" class="dxeButtonEditButton" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlExercicio', event)" style="-khtml-user-select:none;"><table class="dxbebt" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;">
+			<tbody><tr>
+				<td class="dx"><img id="ContentPlaceHolder1_ddlExercicio_B-1Img" class="dxEditors_edtDropDown" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="v" /></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table><input type="hidden" id="ContentPlaceHolder1_ddlExercicio_DDDWS" name="ContentPlaceHolder1_ddlExercicio_DDDWS" value="0:0:-1:-10000:-10000:0:-10000:-10000:1" /><div id="ContentPlaceHolder1_ddlExercicio_DDD_PW-1" style="position:absolute;left:0px;top:0px;z-index:10000;visibility:hidden;display:none;">
+	<table id="ContentPlaceHolder1_ddlExercicio_DDD_PWST-1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;position:relative;">
+		<tbody><tr>
+			<td onmousedown="aspxPWMDown(event,'ContentPlaceHolder1_ddlExercicio_DDD',-1,false)" style="width:200px;cursor:default;"><table id="ContentPlaceHolder1_ddlExercicio_DDD_CLW-1" cellspacing="0" cellpadding="0" style="width:200px;border-collapse:collapse;border-collapse:separate;">
+				<tbody><tr>
+					<td id="ContentPlaceHolder1_ddlExercicio_DDD_PWC-1" style="height:100%;"><div id="ContentPlaceHolder1_ddlExercicio_DDD_CSD-1">
+						<input type="hidden" id="ContentPlaceHolder1_ddlExercicio_DDD_LDeletedItems" name="ContentPlaceHolder1_ddlExercicio_DDD_LDeletedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlExercicio_DDD_LInsertedItems" name="ContentPlaceHolder1_ddlExercicio_DDD_LInsertedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlExercicio_DDD_LCustomCallback" name="ContentPlaceHolder1_ddlExercicio_DDD_LCustomCallback" value="" /><table class="dxeListBox" cellspacing="0" cellpadding="0" id="ContentPlaceHolder1_ddlExercicio_DDD_L" style="border-collapse:collapse;border-collapse:separate;">
+							<tbody><tr>
+								<td valign="top"><div id="ContentPlaceHolder1_ddlExercicio_DDD_L_D" class="dxlbd" style="width:100%;overflow-x:hidden;overflow-y:auto;">
+									<input id="ContentPlaceHolder1_ddlExercicio_DDD_L_VI" type="hidden" name="ctl00$ContentPlaceHolder1$ddlExercicio$DDD$L" value="2013" /><table cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;visibility:hidden!important;display:none!important;">
+										<tbody><tr id="ContentPlaceHolder1_ddlExercicio_DDD_L_LBI-1" class="dxeListBoxItemRow">
+											<td id="ContentPlaceHolder1_ddlExercicio_DDD_L_LBI-1T0" class="dxeListBoxItem"> </td>
+										</tr>
+									</tbody></table><table id="ContentPlaceHolder1_ddlExercicio_DDD_L_LBT" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+										<tbody><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlExercicio_DDD_L_LBI0T0">2015</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlExercicio_DDD_L_LBI1T0">2014</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem dxeListBoxItemSelected" id="ContentPlaceHolder1_ddlExercicio_DDD_L_LBI2T0">2013</td>
+										</tr>
+									</tbody></table>
+								</div></td>
+							</tr>
+						</tbody></table><script id="dxss_966321922" type="text/javascript">
+&lt;!--
+aspxAddDisabledItems('ContentPlaceHolder1_ddlExercicio_DDD_L',[[['dxeDisabled'],[''],['']]]);
+
+var dxo = new ASPxClientListBox('ContentPlaceHolder1_ddlExercicio_DDD_L');
+window['ContentPlaceHolder1_ddlExercicio_DDD_L'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlExercicio$DDD$L';
+dxo.SelectedIndexChanged.AddHandler(function (s, e) { aspxCBLBSelectedIndexChanged('ContentPlaceHolder1_ddlExercicio', e); });
+dxo.ItemClick.AddHandler(function (s, e) { aspxCBLBItemMouseUp('ContentPlaceHolder1_ddlExercicio', e); });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.savedSelectedIndex = 2;
+dxo.itemsValue=['2015','2014','2013'];
+dxo.isComboBoxList = true;
+dxo.hasSampleItem = true;
+dxo.hoverClasses=['dxeListBoxItemHover'];
+dxo.selectedClasses=['dxeListBoxItemSelected'];
+dxo.disabledClasses=['dxeDisabled'];
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+					</div></td>
+				</tr>
+			</tbody></table></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_25-4Ttw8') no-repeat left top;"></td>
+		</tr><tr>
+			<td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_24-4Ttw8') no-repeat left top;"></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_26-4Ttw8') no-repeat left top;"><div style="height:5px;width:5px;">
+
+			</div></td>
+		</tr>
+	</tbody></table>
+</div><script id="dxss_989717465" type="text/javascript">
+&lt;!--
+
+var dxo = new ASPxClientPopupControl('ContentPlaceHolder1_ddlExercicio_DDD');
+window['ContentPlaceHolder1_ddlExercicio_DDD'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlExercicio$DDD';
+dxo.Shown.AddHandler(function (s, e) { aspxDDBPCShown('ContentPlaceHolder1_ddlExercicio', e); });
+dxo.adjustInnerControlsSizeOnShow=false;
+dxo.closeAction='CloseButton';
+dxo.popupHorizontalAlign='LeftSides';
+dxo.popupVerticalAlign='Below';
+dxo.width=0;
+dxo.height=0;
+dxo.InlineInitialize();
+
+//--&gt;
+</script><table id="ContentPlaceHolder1_ddlExercicio_LP" class="dxeLoadingPanel" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+	<tbody><tr>
+		<td class="dx" style="padding-right:8px;"><img src="/PortaldaTransparencia/DXR.axd?r=2_12-4Ttw8" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;">Loading…</td>
+	</tr>
+</tbody></table><div id="ContentPlaceHolder1_ddlExercicio_LD" class="dxeLoadingDiv" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_1954118440" type="text/javascript">
+&lt;!--
+aspxAddHoverItems('ContentPlaceHolder1_ddlExercicio',[[['dxeButtonEditButtonHover'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddPressedItems('ContentPlaceHolder1_ddlExercicio',[[['dxeButtonEditButtonPressed'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddDisabledItems('ContentPlaceHolder1_ddlExercicio',[[['dxeDisabled'],[''],['','I']],[['dxeDisabled dxeButtonDisabled'],[''],['B-1'],,[[{'spriteCssClass':'dxEditors_edtDropDownDisabled'}]],['Img']]]);
+document.getElementById("ContentPlaceHolder1_ddlExercicio_I").setAttribute("autocomplete", "off");
+
+var dxo = new ASPxClientComboBox('ContentPlaceHolder1_ddlExercicio');
+window['ddlExercicio'] = dxo;
+dxo.autoPostBack = true;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$ddlExercicio',arg,aspxCallback,'ContentPlaceHolder1_ddlExercicio',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlExercicio';
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.incrementalFilteringMode='Contains';
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+                                    </li>
+                                    <li><span class="titulo">Mês:</span>
+                                        <table class="dxeButtonEdit" cellspacing="1" cellpadding="0" id="ContentPlaceHolder1_ddlMes" style="background-color:White;width:50%;">
+	<tbody><tr>
+		<td style="display:none;"><input id="ContentPlaceHolder1_ddlMes_VI" name="ContentPlaceHolder1_ddlMes_VI" type="hidden" value="Janeiro" /></td><td class="dxic" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlMes', event)" style="width:100%;padding-left:1px;padding-right:1px;padding-top:1px;padding-bottom:1px;"><input class="dxeEditArea dxeEditAreaSys" name="ctl00$ContentPlaceHolder1$ddlMes" value="Janeiro" id="ContentPlaceHolder1_ddlMes_I" onchange="aspxETextChanged('ContentPlaceHolder1_ddlMes')" onblur="aspxELostFocus('ContentPlaceHolder1_ddlMes')" onfocus="aspxEGotFocus('ContentPlaceHolder1_ddlMes')" type="text" onkeydown="aspxEKeyDown('ContentPlaceHolder1_ddlMes', event)" style="background-color:White;height:15px;" autocomplete="off" /></td><td id="ContentPlaceHolder1_ddlMes_B-1" class="dxeButtonEditButton" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlMes', event)" style="-khtml-user-select:none;"><table class="dxbebt" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;">
+			<tbody><tr>
+				<td class="dx"><img id="ContentPlaceHolder1_ddlMes_B-1Img" class="dxEditors_edtDropDown" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="v" /></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table><input type="hidden" id="ContentPlaceHolder1_ddlMes_DDDWS" name="ContentPlaceHolder1_ddlMes_DDDWS" value="0:0:-1:-10000:-10000:0:-10000:-10000:1" /><div id="ContentPlaceHolder1_ddlMes_DDD_PW-1" style="position:absolute;left:0px;top:0px;z-index:10000;visibility:hidden;display:none;">
+	<table id="ContentPlaceHolder1_ddlMes_DDD_PWST-1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;position:relative;">
+		<tbody><tr>
+			<td onmousedown="aspxPWMDown(event,'ContentPlaceHolder1_ddlMes_DDD',-1,false)" style="width:200px;cursor:default;"><table id="ContentPlaceHolder1_ddlMes_DDD_CLW-1" cellspacing="0" cellpadding="0" style="width:200px;border-collapse:collapse;border-collapse:separate;">
+				<tbody><tr>
+					<td id="ContentPlaceHolder1_ddlMes_DDD_PWC-1" style="height:100%;"><div id="ContentPlaceHolder1_ddlMes_DDD_CSD-1">
+						<input type="hidden" id="ContentPlaceHolder1_ddlMes_DDD_LDeletedItems" name="ContentPlaceHolder1_ddlMes_DDD_LDeletedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlMes_DDD_LInsertedItems" name="ContentPlaceHolder1_ddlMes_DDD_LInsertedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlMes_DDD_LCustomCallback" name="ContentPlaceHolder1_ddlMes_DDD_LCustomCallback" value="" /><table class="dxeListBox" cellspacing="0" cellpadding="0" id="ContentPlaceHolder1_ddlMes_DDD_L" style="border-collapse:collapse;border-collapse:separate;">
+							<tbody><tr>
+								<td valign="top"><div id="ContentPlaceHolder1_ddlMes_DDD_L_D" class="dxlbd" style="width:100%;overflow-x:hidden;overflow-y:auto;">
+									<input id="ContentPlaceHolder1_ddlMes_DDD_L_VI" type="hidden" name="ctl00$ContentPlaceHolder1$ddlMes$DDD$L" value="Janeiro" /><table cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;visibility:hidden!important;display:none!important;">
+										<tbody><tr id="ContentPlaceHolder1_ddlMes_DDD_L_LBI-1" class="dxeListBoxItemRow">
+											<td id="ContentPlaceHolder1_ddlMes_DDD_L_LBI-1T0" class="dxeListBoxItem"> </td>
+										</tr>
+									</tbody></table><table id="ContentPlaceHolder1_ddlMes_DDD_L_LBT" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+										<tbody><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem dxeListBoxItemSelected" id="ContentPlaceHolder1_ddlMes_DDD_L_LBI0T0">Janeiro</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMes_DDD_L_LBI1T0">Fevereiro</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMes_DDD_L_LBI2T0">Março</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMes_DDD_L_LBI3T0">Abril</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMes_DDD_L_LBI4T0">Maio</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMes_DDD_L_LBI5T0">Junho</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMes_DDD_L_LBI6T0">Julho</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMes_DDD_L_LBI7T0">Agosto</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMes_DDD_L_LBI8T0">Setembro</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMes_DDD_L_LBI9T0">Outubro</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMes_DDD_L_LBI10T0">Novembro</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMes_DDD_L_LBI11T0">Dezembro</td>
+										</tr>
+									</tbody></table>
+								</div></td>
+							</tr>
+						</tbody></table><script id="dxss_1501822461" type="text/javascript">
+&lt;!--
+aspxAddDisabledItems('ContentPlaceHolder1_ddlMes_DDD_L',[[['dxeDisabled'],[''],['']]]);
+
+var dxo = new ASPxClientListBox('ContentPlaceHolder1_ddlMes_DDD_L');
+window['ContentPlaceHolder1_ddlMes_DDD_L'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlMes$DDD$L';
+dxo.SelectedIndexChanged.AddHandler(function (s, e) { aspxCBLBSelectedIndexChanged('ContentPlaceHolder1_ddlMes', e); });
+dxo.ItemClick.AddHandler(function (s, e) { aspxCBLBItemMouseUp('ContentPlaceHolder1_ddlMes', e); });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.savedSelectedIndex = 0;
+dxo.itemsValue=['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+dxo.isComboBoxList = true;
+dxo.hasSampleItem = true;
+dxo.hoverClasses=['dxeListBoxItemHover'];
+dxo.selectedClasses=['dxeListBoxItemSelected'];
+dxo.disabledClasses=['dxeDisabled'];
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+					</div></td>
+				</tr>
+			</tbody></table></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_25-4Ttw8') no-repeat left top;"></td>
+		</tr><tr>
+			<td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_24-4Ttw8') no-repeat left top;"></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_26-4Ttw8') no-repeat left top;"><div style="height:5px;width:5px;">
+
+			</div></td>
+		</tr>
+	</tbody></table>
+</div><script id="dxss_485304795" type="text/javascript">
+&lt;!--
+
+var dxo = new ASPxClientPopupControl('ContentPlaceHolder1_ddlMes_DDD');
+window['ContentPlaceHolder1_ddlMes_DDD'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlMes$DDD';
+dxo.Shown.AddHandler(function (s, e) { aspxDDBPCShown('ContentPlaceHolder1_ddlMes', e); });
+dxo.adjustInnerControlsSizeOnShow=false;
+dxo.closeAction='CloseButton';
+dxo.popupHorizontalAlign='LeftSides';
+dxo.popupVerticalAlign='Below';
+dxo.width=0;
+dxo.height=0;
+dxo.InlineInitialize();
+
+//--&gt;
+</script><table id="ContentPlaceHolder1_ddlMes_LP" class="dxeLoadingPanel" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+	<tbody><tr>
+		<td class="dx" style="padding-right:8px;"><img src="/PortaldaTransparencia/DXR.axd?r=2_12-4Ttw8" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;">Loading…</td>
+	</tr>
+</tbody></table><div id="ContentPlaceHolder1_ddlMes_LD" class="dxeLoadingDiv" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_1181496521" type="text/javascript">
+&lt;!--
+aspxAddHoverItems('ContentPlaceHolder1_ddlMes',[[['dxeButtonEditButtonHover'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddPressedItems('ContentPlaceHolder1_ddlMes',[[['dxeButtonEditButtonPressed'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddDisabledItems('ContentPlaceHolder1_ddlMes',[[['dxeDisabled'],[''],['','I']],[['dxeDisabled dxeButtonDisabled'],[''],['B-1'],,[[{'spriteCssClass':'dxEditors_edtDropDownDisabled'}]],['Img']]]);
+document.getElementById("ContentPlaceHolder1_ddlMes_I").setAttribute("autocomplete", "off");
+
+var dxo = new ASPxClientComboBox('ContentPlaceHolder1_ddlMes');
+window['ddlMes'] = dxo;
+dxo.autoPostBack = true;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$ddlMes',arg,aspxCallback,'ContentPlaceHolder1_ddlMes',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlMes';
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.incrementalFilteringMode='Contains';
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+                                    </li>
+                                    <li><span class="titulo">Dia:</span>
+                                        <table class="dxeButtonEdit" cellspacing="1" cellpadding="0" id="ContentPlaceHolder1_ddlDia" style="background-color:White;width:50%;">
+	<tbody><tr>
+		<td style="display:none;"><input id="ContentPlaceHolder1_ddlDia_VI" name="ContentPlaceHolder1_ddlDia_VI" type="hidden" value="1" /></td><td class="dxic" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlDia', event)" style="width:100%;padding-left:1px;padding-right:1px;padding-top:1px;padding-bottom:1px;"><input class="dxeEditArea dxeEditAreaSys" name="ctl00$ContentPlaceHolder1$ddlDia" value="1" id="ContentPlaceHolder1_ddlDia_I" onchange="aspxETextChanged('ContentPlaceHolder1_ddlDia')" onblur="aspxELostFocus('ContentPlaceHolder1_ddlDia')" onfocus="aspxEGotFocus('ContentPlaceHolder1_ddlDia')" type="text" onkeydown="aspxEKeyDown('ContentPlaceHolder1_ddlDia', event)" style="background-color:White;height:15px;" autocomplete="off" /></td><td id="ContentPlaceHolder1_ddlDia_B-1" class="dxeButtonEditButton" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlDia', event)" style="-khtml-user-select:none;"><table class="dxbebt" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;">
+			<tbody><tr>
+				<td class="dx"><img id="ContentPlaceHolder1_ddlDia_B-1Img" class="dxEditors_edtDropDown" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="v" /></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table><input type="hidden" id="ContentPlaceHolder1_ddlDia_DDDWS" name="ContentPlaceHolder1_ddlDia_DDDWS" value="0:0:-1:-10000:-10000:0:-10000:-10000:1" /><div id="ContentPlaceHolder1_ddlDia_DDD_PW-1" style="position:absolute;left:0px;top:0px;z-index:10000;visibility:hidden;display:none;">
+	<table id="ContentPlaceHolder1_ddlDia_DDD_PWST-1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;position:relative;">
+		<tbody><tr>
+			<td onmousedown="aspxPWMDown(event,'ContentPlaceHolder1_ddlDia_DDD',-1,false)" style="width:200px;cursor:default;"><table id="ContentPlaceHolder1_ddlDia_DDD_CLW-1" cellspacing="0" cellpadding="0" style="width:200px;border-collapse:collapse;border-collapse:separate;">
+				<tbody><tr>
+					<td id="ContentPlaceHolder1_ddlDia_DDD_PWC-1" style="height:100%;"><div id="ContentPlaceHolder1_ddlDia_DDD_CSD-1">
+						<input type="hidden" id="ContentPlaceHolder1_ddlDia_DDD_LDeletedItems" name="ContentPlaceHolder1_ddlDia_DDD_LDeletedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlDia_DDD_LInsertedItems" name="ContentPlaceHolder1_ddlDia_DDD_LInsertedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlDia_DDD_LCustomCallback" name="ContentPlaceHolder1_ddlDia_DDD_LCustomCallback" value="" /><table class="dxeListBox" cellspacing="0" cellpadding="0" id="ContentPlaceHolder1_ddlDia_DDD_L" style="border-collapse:collapse;border-collapse:separate;">
+							<tbody><tr>
+								<td valign="top"><div id="ContentPlaceHolder1_ddlDia_DDD_L_D" class="dxlbd" style="width:100%;overflow-x:hidden;overflow-y:auto;">
+									<input id="ContentPlaceHolder1_ddlDia_DDD_L_VI" type="hidden" name="ctl00$ContentPlaceHolder1$ddlDia$DDD$L" value="1" /><table cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;visibility:hidden!important;display:none!important;">
+										<tbody><tr id="ContentPlaceHolder1_ddlDia_DDD_L_LBI-1" class="dxeListBoxItemRow">
+											<td id="ContentPlaceHolder1_ddlDia_DDD_L_LBI-1T0" class="dxeListBoxItem"> </td>
+										</tr>
+									</tbody></table><table id="ContentPlaceHolder1_ddlDia_DDD_L_LBT" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+										<tbody><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem dxeListBoxItemSelected" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI0T0">1</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI1T0">2</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI2T0">3</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI3T0">4</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI4T0">5</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI5T0">6</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI6T0">7</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI7T0">8</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI8T0">9</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI9T0">10</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI10T0">11</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI11T0">12</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI12T0">13</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI13T0">14</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI14T0">15</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI15T0">16</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI16T0">17</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI17T0">18</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI18T0">19</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI19T0">20</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI20T0">21</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI21T0">22</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI22T0">23</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI23T0">24</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI24T0">25</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI25T0">26</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI26T0">27</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI27T0">28</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI28T0">29</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI29T0">30</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDia_DDD_L_LBI30T0">31</td>
+										</tr>
+									</tbody></table>
+								</div></td>
+							</tr>
+						</tbody></table><script id="dxss_1702808722" type="text/javascript">
+&lt;!--
+aspxAddDisabledItems('ContentPlaceHolder1_ddlDia_DDD_L',[[['dxeDisabled'],[''],['']]]);
+
+var dxo = new ASPxClientListBox('ContentPlaceHolder1_ddlDia_DDD_L');
+window['ContentPlaceHolder1_ddlDia_DDD_L'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlDia$DDD$L';
+dxo.SelectedIndexChanged.AddHandler(function (s, e) { aspxCBLBSelectedIndexChanged('ContentPlaceHolder1_ddlDia', e); });
+dxo.ItemClick.AddHandler(function (s, e) { aspxCBLBItemMouseUp('ContentPlaceHolder1_ddlDia', e); });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.savedSelectedIndex = 0;
+dxo.itemsValue=['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31'];
+dxo.isComboBoxList = true;
+dxo.hasSampleItem = true;
+dxo.hoverClasses=['dxeListBoxItemHover'];
+dxo.selectedClasses=['dxeListBoxItemSelected'];
+dxo.disabledClasses=['dxeDisabled'];
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+					</div></td>
+				</tr>
+			</tbody></table></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_25-4Ttw8') no-repeat left top;"></td>
+		</tr><tr>
+			<td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_24-4Ttw8') no-repeat left top;"></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_26-4Ttw8') no-repeat left top;"><div style="height:5px;width:5px;">
+
+			</div></td>
+		</tr>
+	</tbody></table>
+</div><script id="dxss_1433743245" type="text/javascript">
+&lt;!--
+
+var dxo = new ASPxClientPopupControl('ContentPlaceHolder1_ddlDia_DDD');
+window['ContentPlaceHolder1_ddlDia_DDD'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlDia$DDD';
+dxo.Shown.AddHandler(function (s, e) { aspxDDBPCShown('ContentPlaceHolder1_ddlDia', e); });
+dxo.adjustInnerControlsSizeOnShow=false;
+dxo.closeAction='CloseButton';
+dxo.popupHorizontalAlign='LeftSides';
+dxo.popupVerticalAlign='Below';
+dxo.width=0;
+dxo.height=0;
+dxo.InlineInitialize();
+
+//--&gt;
+</script><table id="ContentPlaceHolder1_ddlDia_LP" class="dxeLoadingPanel" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+	<tbody><tr>
+		<td class="dx" style="padding-right:8px;"><img src="/PortaldaTransparencia/DXR.axd?r=2_12-4Ttw8" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;">Loading…</td>
+	</tr>
+</tbody></table><div id="ContentPlaceHolder1_ddlDia_LD" class="dxeLoadingDiv" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_2039565344" type="text/javascript">
+&lt;!--
+aspxAddHoverItems('ContentPlaceHolder1_ddlDia',[[['dxeButtonEditButtonHover'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddPressedItems('ContentPlaceHolder1_ddlDia',[[['dxeButtonEditButtonPressed'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddDisabledItems('ContentPlaceHolder1_ddlDia',[[['dxeDisabled'],[''],['','I']],[['dxeDisabled dxeButtonDisabled'],[''],['B-1'],,[[{'spriteCssClass':'dxEditors_edtDropDownDisabled'}]],['Img']]]);
+document.getElementById("ContentPlaceHolder1_ddlDia_I").setAttribute("autocomplete", "off");
+
+var dxo = new ASPxClientComboBox('ContentPlaceHolder1_ddlDia');
+window['ddlDia'] = dxo;
+dxo.autoPostBack = true;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$ddlDia',arg,aspxCallback,'ContentPlaceHolder1_ddlDia',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlDia';
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.incrementalFilteringMode='Contains';
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+                                    </li>
+                                    <li><span class="titulo">Tipo de Despesa:</span>
+                                        <table class="dxeButtonEdit" cellspacing="1" cellpadding="0" id="ContentPlaceHolder1_ddlTipoDespesa" style="background-color:#FFE1E2;width:50%;">
+	<tbody><tr>
+		<td style="display:none;"><input id="ContentPlaceHolder1_ddlTipoDespesa_VI" name="ContentPlaceHolder1_ddlTipoDespesa_VI" type="hidden" /></td><td class="dxic" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlTipoDespesa', event)" style="width:100%;padding-left:1px;padding-right:1px;padding-top:1px;padding-bottom:1px;"><input class="dxeEditArea dxeEditAreaSys" id="ContentPlaceHolder1_ddlTipoDespesa_I" name="ctl00$ContentPlaceHolder1$ddlTipoDespesa" onfocus="aspxEGotFocus('ContentPlaceHolder1_ddlTipoDespesa')" onblur="aspxELostFocus('ContentPlaceHolder1_ddlTipoDespesa')" onchange="aspxETextChanged('ContentPlaceHolder1_ddlTipoDespesa')" onkeydown="aspxEKeyDown('ContentPlaceHolder1_ddlTipoDespesa', event)" type="text" style="background-color:#FFE1E2;height:15px;" autocomplete="off" /></td><td id="ContentPlaceHolder1_ddlTipoDespesa_B-1" class="dxeButtonEditButton" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlTipoDespesa', event)" style="-khtml-user-select:none;"><table class="dxbebt" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;">
+			<tbody><tr>
+				<td class="dx"><img id="ContentPlaceHolder1_ddlTipoDespesa_B-1Img" class="dxEditors_edtDropDown" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="v" /></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table><input type="hidden" id="ContentPlaceHolder1_ddlTipoDespesa_DDDWS" name="ContentPlaceHolder1_ddlTipoDespesa_DDDWS" value="0:0:-1:-10000:-10000:0:-10000:-10000:1" /><div id="ContentPlaceHolder1_ddlTipoDespesa_DDD_PW-1" style="position:absolute;left:0px;top:0px;z-index:10000;visibility:hidden;display:none;">
+	<table id="ContentPlaceHolder1_ddlTipoDespesa_DDD_PWST-1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;position:relative;">
+		<tbody><tr>
+			<td onmousedown="aspxPWMDown(event,'ContentPlaceHolder1_ddlTipoDespesa_DDD',-1,false)" style="width:200px;cursor:default;"><table id="ContentPlaceHolder1_ddlTipoDespesa_DDD_CLW-1" cellspacing="0" cellpadding="0" style="width:200px;border-collapse:collapse;border-collapse:separate;">
+				<tbody><tr>
+					<td id="ContentPlaceHolder1_ddlTipoDespesa_DDD_PWC-1" style="height:100%;"><div id="ContentPlaceHolder1_ddlTipoDespesa_DDD_CSD-1">
+						<input type="hidden" id="ContentPlaceHolder1_ddlTipoDespesa_DDD_LDeletedItems" name="ContentPlaceHolder1_ddlTipoDespesa_DDD_LDeletedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlTipoDespesa_DDD_LInsertedItems" name="ContentPlaceHolder1_ddlTipoDespesa_DDD_LInsertedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlTipoDespesa_DDD_LCustomCallback" name="ContentPlaceHolder1_ddlTipoDespesa_DDD_LCustomCallback" value="" /><table class="dxeListBox" cellspacing="0" cellpadding="0" id="ContentPlaceHolder1_ddlTipoDespesa_DDD_L" style="border-collapse:collapse;border-collapse:separate;">
+							<tbody><tr>
+								<td valign="top"><div id="ContentPlaceHolder1_ddlTipoDespesa_DDD_L_D" class="dxlbd" style="width:100%;overflow-x:hidden;overflow-y:auto;">
+									<input id="ContentPlaceHolder1_ddlTipoDespesa_DDD_L_VI" type="hidden" name="ctl00$ContentPlaceHolder1$ddlTipoDespesa$DDD$L" value="" /><table cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;visibility:hidden!important;display:none!important;">
+										<tbody><tr id="ContentPlaceHolder1_ddlTipoDespesa_DDD_L_LBI-1" class="dxeListBoxItemRow">
+											<td id="ContentPlaceHolder1_ddlTipoDespesa_DDD_L_LBI-1T0" class="dxeListBoxItem"> </td>
+										</tr>
+									</tbody></table><table id="ContentPlaceHolder1_ddlTipoDespesa_DDD_L_LBT" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+										<tbody><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlTipoDespesa_DDD_L_LBI0T0">Empenhado</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlTipoDespesa_DDD_L_LBI1T0">Liquidado</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlTipoDespesa_DDD_L_LBI2T0">Pago</td>
+										</tr>
+									</tbody></table>
+								</div></td>
+							</tr>
+						</tbody></table><script id="dxss_1851571868" type="text/javascript">
+&lt;!--
+aspxAddDisabledItems('ContentPlaceHolder1_ddlTipoDespesa_DDD_L',[[['dxeDisabled'],[''],['']]]);
+
+var dxo = new ASPxClientListBox('ContentPlaceHolder1_ddlTipoDespesa_DDD_L');
+window['ContentPlaceHolder1_ddlTipoDespesa_DDD_L'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlTipoDespesa$DDD$L';
+dxo.SelectedIndexChanged.AddHandler(function (s, e) { aspxCBLBSelectedIndexChanged('ContentPlaceHolder1_ddlTipoDespesa', e); });
+dxo.ItemClick.AddHandler(function (s, e) { aspxCBLBItemMouseUp('ContentPlaceHolder1_ddlTipoDespesa', e); });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.itemsValue=['0','1','2'];
+dxo.isComboBoxList = true;
+dxo.hasSampleItem = true;
+dxo.hoverClasses=['dxeListBoxItemHover'];
+dxo.selectedClasses=['dxeListBoxItemSelected'];
+dxo.disabledClasses=['dxeDisabled'];
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+					</div></td>
+				</tr>
+			</tbody></table></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_25-4Ttw8') no-repeat left top;"></td>
+		</tr><tr>
+			<td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_24-4Ttw8') no-repeat left top;"></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_26-4Ttw8') no-repeat left top;"><div style="height:5px;width:5px;">
+
+			</div></td>
+		</tr>
+	</tbody></table>
+</div><script id="dxss_81820764" type="text/javascript">
+&lt;!--
+
+var dxo = new ASPxClientPopupControl('ContentPlaceHolder1_ddlTipoDespesa_DDD');
+window['ContentPlaceHolder1_ddlTipoDespesa_DDD'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlTipoDespesa$DDD';
+dxo.Shown.AddHandler(function (s, e) { aspxDDBPCShown('ContentPlaceHolder1_ddlTipoDespesa', e); });
+dxo.adjustInnerControlsSizeOnShow=false;
+dxo.closeAction='CloseButton';
+dxo.popupHorizontalAlign='LeftSides';
+dxo.popupVerticalAlign='Below';
+dxo.width=0;
+dxo.height=0;
+dxo.InlineInitialize();
+
+//--&gt;
+</script><table id="ContentPlaceHolder1_ddlTipoDespesa_LP" class="dxeLoadingPanel" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+	<tbody><tr>
+		<td class="dx" style="padding-right:8px;"><img src="/PortaldaTransparencia/DXR.axd?r=2_12-4Ttw8" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;">Loading…</td>
+	</tr>
+</tbody></table><div id="ContentPlaceHolder1_ddlTipoDespesa_LD" class="dxeLoadingDiv" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_1863972518" type="text/javascript">
+&lt;!--
+aspxAddHoverItems('ContentPlaceHolder1_ddlTipoDespesa',[[['dxeButtonEditButtonHover'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddPressedItems('ContentPlaceHolder1_ddlTipoDespesa',[[['dxeButtonEditButtonPressed'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddDisabledItems('ContentPlaceHolder1_ddlTipoDespesa',[[['dxeDisabled'],[''],['','I']],[['dxeDisabled dxeButtonDisabled'],[''],['B-1'],,[[{'spriteCssClass':'dxEditors_edtDropDownDisabled'}]],['Img']]]);
+document.getElementById("ContentPlaceHolder1_ddlTipoDespesa_I").setAttribute("autocomplete", "off");
+
+var dxo = new ASPxClientComboBox('ContentPlaceHolder1_ddlTipoDespesa');
+window['ddlTipoDespesa'] = dxo;
+dxo.autoPostBack = true;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$ddlTipoDespesa',arg,aspxCallback,'ContentPlaceHolder1_ddlTipoDespesa',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlTipoDespesa';
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.incrementalFilteringMode='Contains';
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+                                    </li>
+                                    <li class="botoes">
+                                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnEnviar" value="Pesquisar" id="ContentPlaceHolder1_btnEnviar" class="btazul" style="margin-right: -410px" />
+                                    </li>
+                                </ul>
+                                <h2 class="titulo">Receitas</h2>
+                                <ul class="form">
+                                    <li><span class="titulo">Exercício:</span>
+                                        <table class="dxeButtonEdit" cellspacing="1" cellpadding="0" id="ContentPlaceHolder1_ddlExercicioReceita" style="width:50%;">
+	<tbody><tr>
+		<td style="display:none;"><input id="ContentPlaceHolder1_ddlExercicioReceita_VI" name="ContentPlaceHolder1_ddlExercicioReceita_VI" type="hidden" /></td><td class="dxic" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlExercicioReceita', event)" style="width:100%;padding-left:1px;padding-right:1px;padding-top:1px;padding-bottom:1px;"><input class="dxeEditArea dxeEditAreaSys" id="ContentPlaceHolder1_ddlExercicioReceita_I" name="ctl00$ContentPlaceHolder1$ddlExercicioReceita" onfocus="aspxEGotFocus('ContentPlaceHolder1_ddlExercicioReceita')" onblur="aspxELostFocus('ContentPlaceHolder1_ddlExercicioReceita')" onchange="aspxETextChanged('ContentPlaceHolder1_ddlExercicioReceita')" onkeydown="aspxEKeyDown('ContentPlaceHolder1_ddlExercicioReceita', event)" type="text" style="height:15px;" autocomplete="off" /></td><td id="ContentPlaceHolder1_ddlExercicioReceita_B-1" class="dxeButtonEditButton" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlExercicioReceita', event)" style="-khtml-user-select:none;"><table class="dxbebt" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;">
+			<tbody><tr>
+				<td class="dx"><img id="ContentPlaceHolder1_ddlExercicioReceita_B-1Img" class="dxEditors_edtDropDown" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="v" /></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table><input type="hidden" id="ContentPlaceHolder1_ddlExercicioReceita_DDDWS" name="ContentPlaceHolder1_ddlExercicioReceita_DDDWS" value="0:0:-1:-10000:-10000:0:-10000:-10000:1" /><div id="ContentPlaceHolder1_ddlExercicioReceita_DDD_PW-1" style="position:absolute;left:0px;top:0px;z-index:10000;visibility:hidden;display:none;">
+	<table id="ContentPlaceHolder1_ddlExercicioReceita_DDD_PWST-1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;position:relative;">
+		<tbody><tr>
+			<td onmousedown="aspxPWMDown(event,'ContentPlaceHolder1_ddlExercicioReceita_DDD',-1,false)" style="width:200px;cursor:default;"><table id="ContentPlaceHolder1_ddlExercicioReceita_DDD_CLW-1" cellspacing="0" cellpadding="0" style="width:200px;border-collapse:collapse;border-collapse:separate;">
+				<tbody><tr>
+					<td id="ContentPlaceHolder1_ddlExercicioReceita_DDD_PWC-1" style="height:100%;"><div id="ContentPlaceHolder1_ddlExercicioReceita_DDD_CSD-1">
+						<input type="hidden" id="ContentPlaceHolder1_ddlExercicioReceita_DDD_LDeletedItems" name="ContentPlaceHolder1_ddlExercicioReceita_DDD_LDeletedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlExercicioReceita_DDD_LInsertedItems" name="ContentPlaceHolder1_ddlExercicioReceita_DDD_LInsertedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlExercicioReceita_DDD_LCustomCallback" name="ContentPlaceHolder1_ddlExercicioReceita_DDD_LCustomCallback" value="" /><table class="dxeListBox" cellspacing="0" cellpadding="0" id="ContentPlaceHolder1_ddlExercicioReceita_DDD_L" style="border-collapse:collapse;border-collapse:separate;">
+							<tbody><tr>
+								<td valign="top"><div id="ContentPlaceHolder1_ddlExercicioReceita_DDD_L_D" class="dxlbd" style="width:100%;overflow-x:hidden;overflow-y:auto;">
+									<input id="ContentPlaceHolder1_ddlExercicioReceita_DDD_L_VI" type="hidden" name="ctl00$ContentPlaceHolder1$ddlExercicioReceita$DDD$L" value="" /><table cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;visibility:hidden!important;display:none!important;">
+										<tbody><tr id="ContentPlaceHolder1_ddlExercicioReceita_DDD_L_LBI-1" class="dxeListBoxItemRow">
+											<td id="ContentPlaceHolder1_ddlExercicioReceita_DDD_L_LBI-1T0" class="dxeListBoxItem"> </td>
+										</tr>
+									</tbody></table><table id="ContentPlaceHolder1_ddlExercicioReceita_DDD_L_LBT" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+										<tbody><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlExercicioReceita_DDD_L_LBI0T0">2015</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlExercicioReceita_DDD_L_LBI1T0">2014</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlExercicioReceita_DDD_L_LBI2T0">2013</td>
+										</tr>
+									</tbody></table>
+								</div></td>
+							</tr>
+						</tbody></table><script id="dxss_1722262997" type="text/javascript">
+&lt;!--
+aspxAddDisabledItems('ContentPlaceHolder1_ddlExercicioReceita_DDD_L',[[['dxeDisabled'],[''],['']]]);
+
+var dxo = new ASPxClientListBox('ContentPlaceHolder1_ddlExercicioReceita_DDD_L');
+window['ContentPlaceHolder1_ddlExercicioReceita_DDD_L'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlExercicioReceita$DDD$L';
+dxo.SelectedIndexChanged.AddHandler(function (s, e) { aspxCBLBSelectedIndexChanged('ContentPlaceHolder1_ddlExercicioReceita', e); });
+dxo.ItemClick.AddHandler(function (s, e) { aspxCBLBItemMouseUp('ContentPlaceHolder1_ddlExercicioReceita', e); });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.itemsValue=['2015','2014','2013'];
+dxo.isComboBoxList = true;
+dxo.hasSampleItem = true;
+dxo.hoverClasses=['dxeListBoxItemHover'];
+dxo.selectedClasses=['dxeListBoxItemSelected'];
+dxo.disabledClasses=['dxeDisabled'];
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+					</div></td>
+				</tr>
+			</tbody></table></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_25-4Ttw8') no-repeat left top;"></td>
+		</tr><tr>
+			<td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_24-4Ttw8') no-repeat left top;"></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_26-4Ttw8') no-repeat left top;"><div style="height:5px;width:5px;">
+
+			</div></td>
+		</tr>
+	</tbody></table>
+</div><script id="dxss_1878413419" type="text/javascript">
+&lt;!--
+
+var dxo = new ASPxClientPopupControl('ContentPlaceHolder1_ddlExercicioReceita_DDD');
+window['ContentPlaceHolder1_ddlExercicioReceita_DDD'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlExercicioReceita$DDD';
+dxo.Shown.AddHandler(function (s, e) { aspxDDBPCShown('ContentPlaceHolder1_ddlExercicioReceita', e); });
+dxo.adjustInnerControlsSizeOnShow=false;
+dxo.closeAction='CloseButton';
+dxo.popupHorizontalAlign='LeftSides';
+dxo.popupVerticalAlign='Below';
+dxo.width=0;
+dxo.height=0;
+dxo.InlineInitialize();
+
+//--&gt;
+</script><table id="ContentPlaceHolder1_ddlExercicioReceita_LP" class="dxeLoadingPanel" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+	<tbody><tr>
+		<td class="dx" style="padding-right:8px;"><img src="/PortaldaTransparencia/DXR.axd?r=2_12-4Ttw8" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;">Loading…</td>
+	</tr>
+</tbody></table><div id="ContentPlaceHolder1_ddlExercicioReceita_LD" class="dxeLoadingDiv" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_584341633" type="text/javascript">
+&lt;!--
+aspxAddHoverItems('ContentPlaceHolder1_ddlExercicioReceita',[[['dxeButtonEditButtonHover'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddPressedItems('ContentPlaceHolder1_ddlExercicioReceita',[[['dxeButtonEditButtonPressed'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddDisabledItems('ContentPlaceHolder1_ddlExercicioReceita',[[['dxeDisabled'],[''],['','I']],[['dxeDisabled dxeButtonDisabled'],[''],['B-1'],,[[{'spriteCssClass':'dxEditors_edtDropDownDisabled'}]],['Img']]]);
+document.getElementById("ContentPlaceHolder1_ddlExercicioReceita_I").setAttribute("autocomplete", "off");
+
+var dxo = new ASPxClientComboBox('ContentPlaceHolder1_ddlExercicioReceita');
+window['ddlExercicioReceita'] = dxo;
+dxo.autoPostBack = true;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$ddlExercicioReceita',arg,aspxCallback,'ContentPlaceHolder1_ddlExercicioReceita',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlExercicioReceita';
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.incrementalFilteringMode='Contains';
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+                                    </li>
+                                    <li><span class="titulo">Mês:</span>
+                                        <table class="dxeButtonEdit" cellspacing="1" cellpadding="0" id="ContentPlaceHolder1_ddlMesReceita" style="width:50%;">
+	<tbody><tr>
+		<td style="display:none;"><input id="ContentPlaceHolder1_ddlMesReceita_VI" name="ContentPlaceHolder1_ddlMesReceita_VI" type="hidden" /></td><td class="dxic" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlMesReceita', event)" style="width:100%;padding-left:1px;padding-right:1px;padding-top:1px;padding-bottom:1px;"><input class="dxeEditArea dxeEditAreaSys" id="ContentPlaceHolder1_ddlMesReceita_I" name="ctl00$ContentPlaceHolder1$ddlMesReceita" onfocus="aspxEGotFocus('ContentPlaceHolder1_ddlMesReceita')" onblur="aspxELostFocus('ContentPlaceHolder1_ddlMesReceita')" onchange="aspxETextChanged('ContentPlaceHolder1_ddlMesReceita')" onkeydown="aspxEKeyDown('ContentPlaceHolder1_ddlMesReceita', event)" type="text" style="height:15px;" autocomplete="off" /></td><td id="ContentPlaceHolder1_ddlMesReceita_B-1" class="dxeButtonEditButton" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlMesReceita', event)" style="-khtml-user-select:none;"><table class="dxbebt" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;">
+			<tbody><tr>
+				<td class="dx"><img id="ContentPlaceHolder1_ddlMesReceita_B-1Img" class="dxEditors_edtDropDown" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="v" /></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table><input type="hidden" id="ContentPlaceHolder1_ddlMesReceita_DDDWS" name="ContentPlaceHolder1_ddlMesReceita_DDDWS" value="0:0:-1:-10000:-10000:0:-10000:-10000:1" /><div id="ContentPlaceHolder1_ddlMesReceita_DDD_PW-1" style="position:absolute;left:0px;top:0px;z-index:10000;visibility:hidden;display:none;">
+	<table id="ContentPlaceHolder1_ddlMesReceita_DDD_PWST-1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;position:relative;">
+		<tbody><tr>
+			<td onmousedown="aspxPWMDown(event,'ContentPlaceHolder1_ddlMesReceita_DDD',-1,false)" style="width:200px;cursor:default;"><table id="ContentPlaceHolder1_ddlMesReceita_DDD_CLW-1" cellspacing="0" cellpadding="0" style="width:200px;border-collapse:collapse;border-collapse:separate;">
+				<tbody><tr>
+					<td id="ContentPlaceHolder1_ddlMesReceita_DDD_PWC-1" style="height:100%;"><div id="ContentPlaceHolder1_ddlMesReceita_DDD_CSD-1">
+						<input type="hidden" id="ContentPlaceHolder1_ddlMesReceita_DDD_LDeletedItems" name="ContentPlaceHolder1_ddlMesReceita_DDD_LDeletedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlMesReceita_DDD_LInsertedItems" name="ContentPlaceHolder1_ddlMesReceita_DDD_LInsertedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlMesReceita_DDD_LCustomCallback" name="ContentPlaceHolder1_ddlMesReceita_DDD_LCustomCallback" value="" /><table class="dxeListBox" cellspacing="0" cellpadding="0" id="ContentPlaceHolder1_ddlMesReceita_DDD_L" style="border-collapse:collapse;border-collapse:separate;">
+							<tbody><tr>
+								<td valign="top"><div id="ContentPlaceHolder1_ddlMesReceita_DDD_L_D" class="dxlbd" style="width:100%;overflow-x:hidden;overflow-y:auto;">
+									<input id="ContentPlaceHolder1_ddlMesReceita_DDD_L_VI" type="hidden" name="ctl00$ContentPlaceHolder1$ddlMesReceita$DDD$L" value="" /><table cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;visibility:hidden!important;display:none!important;">
+										<tbody><tr id="ContentPlaceHolder1_ddlMesReceita_DDD_L_LBI-1" class="dxeListBoxItemRow">
+											<td id="ContentPlaceHolder1_ddlMesReceita_DDD_L_LBI-1T0" class="dxeListBoxItem"> </td>
+										</tr>
+									</tbody></table><table id="ContentPlaceHolder1_ddlMesReceita_DDD_L_LBT" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+										<tbody><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMesReceita_DDD_L_LBI0T0">Janeiro</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMesReceita_DDD_L_LBI1T0">Fevereiro</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMesReceita_DDD_L_LBI2T0">Março</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMesReceita_DDD_L_LBI3T0">Abril</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMesReceita_DDD_L_LBI4T0">Maio</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlMesReceita_DDD_L_LBI5T0">Junho</td>
+										</tr>
+									</tbody></table>
+								</div></td>
+							</tr>
+						</tbody></table><script id="dxss_101569553" type="text/javascript">
+&lt;!--
+aspxAddDisabledItems('ContentPlaceHolder1_ddlMesReceita_DDD_L',[[['dxeDisabled'],[''],['']]]);
+
+var dxo = new ASPxClientListBox('ContentPlaceHolder1_ddlMesReceita_DDD_L');
+window['ContentPlaceHolder1_ddlMesReceita_DDD_L'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlMesReceita$DDD$L';
+dxo.SelectedIndexChanged.AddHandler(function (s, e) { aspxCBLBSelectedIndexChanged('ContentPlaceHolder1_ddlMesReceita', e); });
+dxo.ItemClick.AddHandler(function (s, e) { aspxCBLBItemMouseUp('ContentPlaceHolder1_ddlMesReceita', e); });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.itemsValue=['Janeiro','Fevereiro','Março','Abril','Maio','Junho'];
+dxo.isComboBoxList = true;
+dxo.hasSampleItem = true;
+dxo.hoverClasses=['dxeListBoxItemHover'];
+dxo.selectedClasses=['dxeListBoxItemSelected'];
+dxo.disabledClasses=['dxeDisabled'];
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+					</div></td>
+				</tr>
+			</tbody></table></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_25-4Ttw8') no-repeat left top;"></td>
+		</tr><tr>
+			<td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_24-4Ttw8') no-repeat left top;"></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_26-4Ttw8') no-repeat left top;"><div style="height:5px;width:5px;">
+
+			</div></td>
+		</tr>
+	</tbody></table>
+</div><script id="dxss_1416058528" type="text/javascript">
+&lt;!--
+
+var dxo = new ASPxClientPopupControl('ContentPlaceHolder1_ddlMesReceita_DDD');
+window['ContentPlaceHolder1_ddlMesReceita_DDD'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlMesReceita$DDD';
+dxo.Shown.AddHandler(function (s, e) { aspxDDBPCShown('ContentPlaceHolder1_ddlMesReceita', e); });
+dxo.adjustInnerControlsSizeOnShow=false;
+dxo.closeAction='CloseButton';
+dxo.popupHorizontalAlign='LeftSides';
+dxo.popupVerticalAlign='Below';
+dxo.width=0;
+dxo.height=0;
+dxo.InlineInitialize();
+
+//--&gt;
+</script><table id="ContentPlaceHolder1_ddlMesReceita_LP" class="dxeLoadingPanel" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+	<tbody><tr>
+		<td class="dx" style="padding-right:8px;"><img src="/PortaldaTransparencia/DXR.axd?r=2_12-4Ttw8" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;">Loading…</td>
+	</tr>
+</tbody></table><div id="ContentPlaceHolder1_ddlMesReceita_LD" class="dxeLoadingDiv" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_540716083" type="text/javascript">
+&lt;!--
+aspxAddHoverItems('ContentPlaceHolder1_ddlMesReceita',[[['dxeButtonEditButtonHover'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddPressedItems('ContentPlaceHolder1_ddlMesReceita',[[['dxeButtonEditButtonPressed'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddDisabledItems('ContentPlaceHolder1_ddlMesReceita',[[['dxeDisabled'],[''],['','I']],[['dxeDisabled dxeButtonDisabled'],[''],['B-1'],,[[{'spriteCssClass':'dxEditors_edtDropDownDisabled'}]],['Img']]]);
+document.getElementById("ContentPlaceHolder1_ddlMesReceita_I").setAttribute("autocomplete", "off");
+
+var dxo = new ASPxClientComboBox('ContentPlaceHolder1_ddlMesReceita');
+window['ddlMesReceita'] = dxo;
+dxo.autoPostBack = true;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$ddlMesReceita',arg,aspxCallback,'ContentPlaceHolder1_ddlMesReceita',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlMesReceita';
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.incrementalFilteringMode='Contains';
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+                                    </li>
+                                    <li><span class="titulo">Dia:</span>
+                                        <table class="dxeButtonEdit" cellspacing="1" cellpadding="0" id="ContentPlaceHolder1_ddlDiaReceita" style="width:50%;">
+	<tbody><tr>
+		<td style="display:none;"><input id="ContentPlaceHolder1_ddlDiaReceita_VI" name="ContentPlaceHolder1_ddlDiaReceita_VI" type="hidden" /></td><td class="dxic" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlDiaReceita', event)" style="width:100%;padding-left:1px;padding-right:1px;padding-top:1px;padding-bottom:1px;"><input class="dxeEditArea dxeEditAreaSys" id="ContentPlaceHolder1_ddlDiaReceita_I" name="ctl00$ContentPlaceHolder1$ddlDiaReceita" onfocus="aspxEGotFocus('ContentPlaceHolder1_ddlDiaReceita')" onblur="aspxELostFocus('ContentPlaceHolder1_ddlDiaReceita')" onchange="aspxETextChanged('ContentPlaceHolder1_ddlDiaReceita')" onkeydown="aspxEKeyDown('ContentPlaceHolder1_ddlDiaReceita', event)" type="text" style="height:15px;" autocomplete="off" /></td><td id="ContentPlaceHolder1_ddlDiaReceita_B-1" class="dxeButtonEditButton" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlDiaReceita', event)" style="-khtml-user-select:none;"><table class="dxbebt" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;">
+			<tbody><tr>
+				<td class="dx"><img id="ContentPlaceHolder1_ddlDiaReceita_B-1Img" class="dxEditors_edtDropDown" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="v" /></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table><input type="hidden" id="ContentPlaceHolder1_ddlDiaReceita_DDDWS" name="ContentPlaceHolder1_ddlDiaReceita_DDDWS" value="0:0:-1:-10000:-10000:0:-10000:-10000:1" /><div id="ContentPlaceHolder1_ddlDiaReceita_DDD_PW-1" style="position:absolute;left:0px;top:0px;z-index:10000;visibility:hidden;display:none;">
+	<table id="ContentPlaceHolder1_ddlDiaReceita_DDD_PWST-1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;position:relative;">
+		<tbody><tr>
+			<td onmousedown="aspxPWMDown(event,'ContentPlaceHolder1_ddlDiaReceita_DDD',-1,false)" style="width:200px;cursor:default;"><table id="ContentPlaceHolder1_ddlDiaReceita_DDD_CLW-1" cellspacing="0" cellpadding="0" style="width:200px;border-collapse:collapse;border-collapse:separate;">
+				<tbody><tr>
+					<td id="ContentPlaceHolder1_ddlDiaReceita_DDD_PWC-1" style="height:100%;"><div id="ContentPlaceHolder1_ddlDiaReceita_DDD_CSD-1">
+						<input type="hidden" id="ContentPlaceHolder1_ddlDiaReceita_DDD_LDeletedItems" name="ContentPlaceHolder1_ddlDiaReceita_DDD_LDeletedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlDiaReceita_DDD_LInsertedItems" name="ContentPlaceHolder1_ddlDiaReceita_DDD_LInsertedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlDiaReceita_DDD_LCustomCallback" name="ContentPlaceHolder1_ddlDiaReceita_DDD_LCustomCallback" value="" /><table class="dxeListBox" cellspacing="0" cellpadding="0" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L" style="border-collapse:collapse;border-collapse:separate;">
+							<tbody><tr>
+								<td valign="top"><div id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_D" class="dxlbd" style="width:100%;overflow-x:hidden;overflow-y:auto;">
+									<input id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_VI" type="hidden" name="ctl00$ContentPlaceHolder1$ddlDiaReceita$DDD$L" value="" /><table cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;visibility:hidden!important;display:none!important;">
+										<tbody><tr id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI-1" class="dxeListBoxItemRow">
+											<td id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI-1T0" class="dxeListBoxItem"> </td>
+										</tr>
+									</tbody></table><table id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBT" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+										<tbody><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI0T0">1</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI1T0">2</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI2T0">3</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI3T0">4</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI4T0">5</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI5T0">6</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI6T0">7</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI7T0">8</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI8T0">9</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI9T0">10</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI10T0">11</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI11T0">12</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI12T0">13</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI13T0">14</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI14T0">15</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI15T0">16</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI16T0">17</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI17T0">18</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI18T0">19</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI19T0">20</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI20T0">21</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI21T0">22</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI22T0">23</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI23T0">24</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI24T0">25</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI25T0">26</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI26T0">27</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI27T0">28</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI28T0">29</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI29T0">30</td>
+										</tr><tr class="dxeListBoxItemRow">
+											<td class="dxeListBoxItem" id="ContentPlaceHolder1_ddlDiaReceita_DDD_L_LBI30T0">31</td>
+										</tr>
+									</tbody></table>
+								</div></td>
+							</tr>
+						</tbody></table><script id="dxss_631976717" type="text/javascript">
+&lt;!--
+aspxAddDisabledItems('ContentPlaceHolder1_ddlDiaReceita_DDD_L',[[['dxeDisabled'],[''],['']]]);
+
+var dxo = new ASPxClientListBox('ContentPlaceHolder1_ddlDiaReceita_DDD_L');
+window['ContentPlaceHolder1_ddlDiaReceita_DDD_L'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlDiaReceita$DDD$L';
+dxo.SelectedIndexChanged.AddHandler(function (s, e) { aspxCBLBSelectedIndexChanged('ContentPlaceHolder1_ddlDiaReceita', e); });
+dxo.ItemClick.AddHandler(function (s, e) { aspxCBLBItemMouseUp('ContentPlaceHolder1_ddlDiaReceita', e); });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.itemsValue=['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31'];
+dxo.isComboBoxList = true;
+dxo.hasSampleItem = true;
+dxo.hoverClasses=['dxeListBoxItemHover'];
+dxo.selectedClasses=['dxeListBoxItemSelected'];
+dxo.disabledClasses=['dxeDisabled'];
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+					</div></td>
+				</tr>
+			</tbody></table></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_25-4Ttw8') no-repeat left top;"></td>
+		</tr><tr>
+			<td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_24-4Ttw8') no-repeat left top;"></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_26-4Ttw8') no-repeat left top;"><div style="height:5px;width:5px;">
+
+			</div></td>
+		</tr>
+	</tbody></table>
+</div><script id="dxss_111776211" type="text/javascript">
+&lt;!--
+
+var dxo = new ASPxClientPopupControl('ContentPlaceHolder1_ddlDiaReceita_DDD');
+window['ContentPlaceHolder1_ddlDiaReceita_DDD'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlDiaReceita$DDD';
+dxo.Shown.AddHandler(function (s, e) { aspxDDBPCShown('ContentPlaceHolder1_ddlDiaReceita', e); });
+dxo.adjustInnerControlsSizeOnShow=false;
+dxo.closeAction='CloseButton';
+dxo.popupHorizontalAlign='LeftSides';
+dxo.popupVerticalAlign='Below';
+dxo.width=0;
+dxo.height=0;
+dxo.InlineInitialize();
+
+//--&gt;
+</script><table id="ContentPlaceHolder1_ddlDiaReceita_LP" class="dxeLoadingPanel" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+	<tbody><tr>
+		<td class="dx" style="padding-right:8px;"><img src="/PortaldaTransparencia/DXR.axd?r=2_12-4Ttw8" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;">Loading…</td>
+	</tr>
+</tbody></table><div id="ContentPlaceHolder1_ddlDiaReceita_LD" class="dxeLoadingDiv" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_901740930" type="text/javascript">
+&lt;!--
+aspxAddHoverItems('ContentPlaceHolder1_ddlDiaReceita',[[['dxeButtonEditButtonHover'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddPressedItems('ContentPlaceHolder1_ddlDiaReceita',[[['dxeButtonEditButtonPressed'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddDisabledItems('ContentPlaceHolder1_ddlDiaReceita',[[['dxeDisabled'],[''],['','I']],[['dxeDisabled dxeButtonDisabled'],[''],['B-1'],,[[{'spriteCssClass':'dxEditors_edtDropDownDisabled'}]],['Img']]]);
+document.getElementById("ContentPlaceHolder1_ddlDiaReceita_I").setAttribute("autocomplete", "off");
+
+var dxo = new ASPxClientComboBox('ContentPlaceHolder1_ddlDiaReceita');
+window['ddlDiaReceita'] = dxo;
+dxo.autoPostBack = true;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$ddlDiaReceita',arg,aspxCallback,'ContentPlaceHolder1_ddlDiaReceita',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlDiaReceita';
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.incrementalFilteringMode='Contains';
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+                                    </li>
+                                    <li>
+                                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnEnviarR" value="Pesquisar" id="ContentPlaceHolder1_btnEnviarR" class="btazul" style="margin-right: 50px" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="ContentPlaceHolder1_Outro" class="box">
+                                <h2 class="titulo">Outras Informações</h2>
+                                <ul class="form">
+                                    <li><span class="titulo">Tipo de Documento:</span>
+                                        <script id="dxss_386661598" type="text/javascript">
+&lt;!--
+(function(){var a = ({'currency':'R$','shortDate':'dd/MM/yyyy','abbrMonthNames':['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez',''],'numNegInf':'-Infinito','currGroupSeparator':'.','am':'','currPosPattern':2,'longDate':'dddd, d\' de \'MMMM\' de \'yyyy','genMonthNames':['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro',''],'numNan':'NaN (Não é um número)','numPosInf':'+Infinito','abbrDayNames':['dom','seg','ter','qua','qui','sex','sáb'],'numDecimalPoint':',','currNegPattern':9,'monthNames':['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro',''],'monthDay':'d\' de \'MMMM','shortTime':'HH:mm','pm':'','numGroupSeparator':'.','longTime':'HH:mm:ss','yearMonth':'MMMM\' de \'yyyy','currDecimalPoint':',','percentPattern':1,'dayNames':['domingo','segunda-feira','terça-feira','quarta-feira','quinta-feira','sexta-feira','sábado']});for(var b in a) __aspxCultureInfo[b] = a[b];})();
+//--&gt;
+</script><table class="dxeButtonEdit" cellspacing="1" cellpadding="0" id="ContentPlaceHolder1_ddlTipoDocumento" style="width:50%;">
+	<tbody><tr>
+		<td style="display:none;"><input id="ContentPlaceHolder1_ddlTipoDocumento_VI" name="ContentPlaceHolder1_ddlTipoDocumento_VI" type="hidden" /></td><td class="dxic" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlTipoDocumento', event)" style="width:100%;padding-left:1px;padding-right:1px;padding-top:1px;padding-bottom:1px;"><input class="dxeEditArea dxeEditAreaSys" name="ctl00$ContentPlaceHolder1$ddlTipoDocumento" id="ContentPlaceHolder1_ddlTipoDocumento_I" onchange="aspxETextChanged('ContentPlaceHolder1_ddlTipoDocumento')" onblur="aspxELostFocus('ContentPlaceHolder1_ddlTipoDocumento')" onfocus="aspxEGotFocus('ContentPlaceHolder1_ddlTipoDocumento')" type="text" onkeydown="aspxEKeyDown('ContentPlaceHolder1_ddlTipoDocumento', event)" readonly="readonly" style="height:15px;cursor:default;" autocomplete="off" /></td><td id="ContentPlaceHolder1_ddlTipoDocumento_B-1" class="dxeButtonEditButton" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlTipoDocumento', event)" style="-khtml-user-select:none;"><table class="dxbebt" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;">
+			<tbody><tr>
+				<td class="dx"><img id="ContentPlaceHolder1_ddlTipoDocumento_B-1Img" class="dxEditors_edtDropDown" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="v" /></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table><input type="hidden" id="ContentPlaceHolder1_ddlTipoDocumento_DDDWS" name="ContentPlaceHolder1_ddlTipoDocumento_DDDWS" value="0:0:-1:-10000:-10000:0:-10000:-10000:1" /><div id="ContentPlaceHolder1_ddlTipoDocumento_DDD_PW-1" style="position:absolute;left:0px;top:0px;z-index:10000;visibility:hidden;display:none;">
+	<table id="ContentPlaceHolder1_ddlTipoDocumento_DDD_PWST-1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;position:relative;">
+		<tbody><tr>
+			<td onmousedown="aspxPWMDown(event,'ContentPlaceHolder1_ddlTipoDocumento_DDD',-1,false)" style="width:200px;cursor:default;"><table id="ContentPlaceHolder1_ddlTipoDocumento_DDD_CLW-1" cellspacing="0" cellpadding="0" style="width:200px;border-collapse:collapse;border-collapse:separate;">
+				<tbody><tr>
+					<td id="ContentPlaceHolder1_ddlTipoDocumento_DDD_PWC-1" style="height:100%;"><div id="ContentPlaceHolder1_ddlTipoDocumento_DDD_CSD-1">
+						<input type="hidden" id="ContentPlaceHolder1_ddlTipoDocumento_DDD_LDeletedItems" name="ContentPlaceHolder1_ddlTipoDocumento_DDD_LDeletedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlTipoDocumento_DDD_LInsertedItems" name="ContentPlaceHolder1_ddlTipoDocumento_DDD_LInsertedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlTipoDocumento_DDD_LCustomCallback" name="ContentPlaceHolder1_ddlTipoDocumento_DDD_LCustomCallback" value="" /><table class="dxeListBox" cellspacing="0" cellpadding="0" id="ContentPlaceHolder1_ddlTipoDocumento_DDD_L" style="border-collapse:collapse;border-collapse:separate;">
+							<tbody><tr>
+								<td valign="top"><div id="ContentPlaceHolder1_ddlTipoDocumento_DDD_L_H" class="dxeHD">
+									<table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;border-collapse:separate;table-layout:fixed!important;">
+										<tbody><tr>
+											<td class="dxeListBoxItem dxeHFC" style="width:100%;">Documento</td>
+										</tr>
+									</tbody></table>
+								</div><div id="ContentPlaceHolder1_ddlTipoDocumento_DDD_L_D" class="dxlbd" style="overflow-x:hidden;overflow-y:auto;">
+									<input id="ContentPlaceHolder1_ddlTipoDocumento_DDD_L_VI" type="hidden" name="ctl00$ContentPlaceHolder1$ddlTipoDocumento$DDD$L" value="" /><table cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;visibility:hidden!important;display:none!important;">
+										<tbody><tr id="ContentPlaceHolder1_ddlTipoDocumento_DDD_L_LBI-1" class="dxeListBoxItemRow">
+											<td id="ContentPlaceHolder1_ddlTipoDocumento_DDD_L_LBI-1T0" class="dxeListBoxItem dxeLTM" style="width:100%;"> </td>
+										</tr>
+									</tbody></table><table id="ContentPlaceHolder1_ddlTipoDocumento_DDD_L_LBT" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;border-collapse:separate;table-layout:fixed!important;">
+										<tbody></tbody></table>
+								</div></td>
+							</tr>
+						</tbody></table><script id="dxss_1661269732" type="text/javascript">
+&lt;!--
+aspxAddDisabledItems('ContentPlaceHolder1_ddlTipoDocumento_DDD_L',[[['dxeDisabled'],[''],['']]]);
+
+var dxo = new ASPxClientListBox('ContentPlaceHolder1_ddlTipoDocumento_DDD_L');
+window['ContentPlaceHolder1_ddlTipoDocumento_DDD_L'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlTipoDocumento$DDD$L';
+dxo.SelectedIndexChanged.AddHandler(function (s, e) { aspxCBLBSelectedIndexChanged('ContentPlaceHolder1_ddlTipoDocumento', e); });
+dxo.ItemClick.AddHandler(function (s, e) { aspxCBLBItemMouseUp('ContentPlaceHolder1_ddlTipoDocumento', e); });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.isComboBoxList = true;
+dxo.hasSampleItem = true;
+dxo.isHasFakeRow = true;
+dxo.hoverClasses=['dxeListBoxItemHover'];
+dxo.selectedClasses=['dxeListBoxItemSelected'];
+dxo.disabledClasses=['dxeDisabled'];
+dxo.columnFieldNames=['ds_DocumentoTipo'];
+dxo.textFormatString='{0}';
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+					</div></td>
+				</tr>
+			</tbody></table></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_25-4Ttw8') no-repeat left top;"></td>
+		</tr><tr>
+			<td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_24-4Ttw8') no-repeat left top;"></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_26-4Ttw8') no-repeat left top;"><div style="height:5px;width:5px;">
+
+			</div></td>
+		</tr>
+	</tbody></table>
+</div><script id="dxss_560911923" type="text/javascript">
+&lt;!--
+
+var dxo = new ASPxClientPopupControl('ContentPlaceHolder1_ddlTipoDocumento_DDD');
+window['ContentPlaceHolder1_ddlTipoDocumento_DDD'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlTipoDocumento$DDD';
+dxo.Shown.AddHandler(function (s, e) { aspxDDBPCShown('ContentPlaceHolder1_ddlTipoDocumento', e); });
+dxo.adjustInnerControlsSizeOnShow=false;
+dxo.closeAction='CloseButton';
+dxo.popupHorizontalAlign='LeftSides';
+dxo.popupVerticalAlign='Below';
+dxo.width=0;
+dxo.height=0;
+dxo.InlineInitialize();
+
+//--&gt;
+</script><table id="ContentPlaceHolder1_ddlTipoDocumento_LP" class="dxeLoadingPanel" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+	<tbody><tr>
+		<td class="dx" style="padding-right:8px;"><img src="/PortaldaTransparencia/DXR.axd?r=2_12-4Ttw8" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;">Loading…</td>
+	</tr>
+</tbody></table><div id="ContentPlaceHolder1_ddlTipoDocumento_LD" class="dxeLoadingDiv" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_309100957" type="text/javascript">
+&lt;!--
+aspxAddHoverItems('ContentPlaceHolder1_ddlTipoDocumento',[[['dxeButtonEditButtonHover'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddPressedItems('ContentPlaceHolder1_ddlTipoDocumento',[[['dxeButtonEditButtonPressed'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddDisabledItems('ContentPlaceHolder1_ddlTipoDocumento',[[['dxeDisabled'],[''],['','I']],[['dxeDisabled dxeButtonDisabled'],[''],['B-1'],,[[{'spriteCssClass':'dxEditors_edtDropDownDisabled'}]],['Img']]]);
+document.getElementById("ContentPlaceHolder1_ddlTipoDocumento_I").setAttribute("autocomplete", "off");
+
+var dxo = new ASPxClientComboBox('ContentPlaceHolder1_ddlTipoDocumento');
+window['ddlTipoDocumento'] = dxo;
+dxo.autoPostBack = true;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$ddlTipoDocumento',arg,aspxCallback,'ContentPlaceHolder1_ddlTipoDocumento',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlTipoDocumento';
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+                                    </li>
+                                    <li><span class="titulo">Exercício:</span>
+                                        <table class="dxeButtonEdit" cellspacing="1" cellpadding="0" id="ContentPlaceHolder1_ddlExercicioTipo" style="width:50%;">
+	<tbody><tr>
+		<td style="display:none;"><input id="ContentPlaceHolder1_ddlExercicioTipo_VI" name="ContentPlaceHolder1_ddlExercicioTipo_VI" type="hidden" /></td><td class="dxic" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlExercicioTipo', event)" style="width:100%;padding-left:1px;padding-right:1px;padding-top:1px;padding-bottom:1px;"><input class="dxeEditArea dxeEditAreaSys" id="ContentPlaceHolder1_ddlExercicioTipo_I" name="ctl00$ContentPlaceHolder1$ddlExercicioTipo" onfocus="aspxEGotFocus('ContentPlaceHolder1_ddlExercicioTipo')" onblur="aspxELostFocus('ContentPlaceHolder1_ddlExercicioTipo')" onchange="aspxETextChanged('ContentPlaceHolder1_ddlExercicioTipo')" onkeydown="aspxEKeyDown('ContentPlaceHolder1_ddlExercicioTipo', event)" type="text" style="height:15px;" autocomplete="off" /></td><td id="ContentPlaceHolder1_ddlExercicioTipo_B-1" class="dxeButtonEditButton" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlExercicioTipo', event)" style="-khtml-user-select:none;"><table class="dxbebt" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;">
+			<tbody><tr>
+				<td class="dx"><img id="ContentPlaceHolder1_ddlExercicioTipo_B-1Img" class="dxEditors_edtDropDown" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="v" /></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table><input type="hidden" id="ContentPlaceHolder1_ddlExercicioTipo_DDDWS" name="ContentPlaceHolder1_ddlExercicioTipo_DDDWS" value="0:0:-1:-10000:-10000:0:-10000:-10000:1" /><div id="ContentPlaceHolder1_ddlExercicioTipo_DDD_PW-1" style="position:absolute;left:0px;top:0px;z-index:10000;visibility:hidden;display:none;">
+	<table id="ContentPlaceHolder1_ddlExercicioTipo_DDD_PWST-1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;position:relative;">
+		<tbody><tr>
+			<td onmousedown="aspxPWMDown(event,'ContentPlaceHolder1_ddlExercicioTipo_DDD',-1,false)" style="width:200px;cursor:default;"><table id="ContentPlaceHolder1_ddlExercicioTipo_DDD_CLW-1" cellspacing="0" cellpadding="0" style="width:200px;border-collapse:collapse;border-collapse:separate;">
+				<tbody><tr>
+					<td id="ContentPlaceHolder1_ddlExercicioTipo_DDD_PWC-1" style="height:100%;"><div id="ContentPlaceHolder1_ddlExercicioTipo_DDD_CSD-1">
+						<input type="hidden" id="ContentPlaceHolder1_ddlExercicioTipo_DDD_LDeletedItems" name="ContentPlaceHolder1_ddlExercicioTipo_DDD_LDeletedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlExercicioTipo_DDD_LInsertedItems" name="ContentPlaceHolder1_ddlExercicioTipo_DDD_LInsertedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlExercicioTipo_DDD_LCustomCallback" name="ContentPlaceHolder1_ddlExercicioTipo_DDD_LCustomCallback" value="" /><table class="dxeListBox" cellspacing="0" cellpadding="0" id="ContentPlaceHolder1_ddlExercicioTipo_DDD_L" style="border-collapse:collapse;border-collapse:separate;">
+							<tbody><tr>
+								<td valign="top"><div id="ContentPlaceHolder1_ddlExercicioTipo_DDD_L_D" class="dxlbd" style="width:100%;overflow-x:hidden;overflow-y:auto;">
+									<input id="ContentPlaceHolder1_ddlExercicioTipo_DDD_L_VI" type="hidden" name="ctl00$ContentPlaceHolder1$ddlExercicioTipo$DDD$L" value="" /><table cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;visibility:hidden!important;display:none!important;">
+										<tbody><tr id="ContentPlaceHolder1_ddlExercicioTipo_DDD_L_LBI-1" class="dxeListBoxItemRow">
+											<td id="ContentPlaceHolder1_ddlExercicioTipo_DDD_L_LBI-1T0" class="dxeListBoxItem"> </td>
+										</tr>
+									</tbody></table><table id="ContentPlaceHolder1_ddlExercicioTipo_DDD_L_LBT" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+										<tbody></tbody></table>
+								</div></td>
+							</tr>
+						</tbody></table><script id="dxss_1189736628" type="text/javascript">
+&lt;!--
+aspxAddDisabledItems('ContentPlaceHolder1_ddlExercicioTipo_DDD_L',[[['dxeDisabled'],[''],['']]]);
+
+var dxo = new ASPxClientListBox('ContentPlaceHolder1_ddlExercicioTipo_DDD_L');
+window['ContentPlaceHolder1_ddlExercicioTipo_DDD_L'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlExercicioTipo$DDD$L';
+dxo.SelectedIndexChanged.AddHandler(function (s, e) { aspxCBLBSelectedIndexChanged('ContentPlaceHolder1_ddlExercicioTipo', e); });
+dxo.ItemClick.AddHandler(function (s, e) { aspxCBLBItemMouseUp('ContentPlaceHolder1_ddlExercicioTipo', e); });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.isComboBoxList = true;
+dxo.hasSampleItem = true;
+dxo.isHasFakeRow = true;
+dxo.hoverClasses=['dxeListBoxItemHover'];
+dxo.selectedClasses=['dxeListBoxItemSelected'];
+dxo.disabledClasses=['dxeDisabled'];
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+					</div></td>
+				</tr>
+			</tbody></table></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_25-4Ttw8') no-repeat left top;"></td>
+		</tr><tr>
+			<td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_24-4Ttw8') no-repeat left top;"></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_26-4Ttw8') no-repeat left top;"><div style="height:5px;width:5px;">
+
+			</div></td>
+		</tr>
+	</tbody></table>
+</div><script id="dxss_373511424" type="text/javascript">
+&lt;!--
+
+var dxo = new ASPxClientPopupControl('ContentPlaceHolder1_ddlExercicioTipo_DDD');
+window['ContentPlaceHolder1_ddlExercicioTipo_DDD'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlExercicioTipo$DDD';
+dxo.Shown.AddHandler(function (s, e) { aspxDDBPCShown('ContentPlaceHolder1_ddlExercicioTipo', e); });
+dxo.adjustInnerControlsSizeOnShow=false;
+dxo.closeAction='CloseButton';
+dxo.popupHorizontalAlign='LeftSides';
+dxo.popupVerticalAlign='Below';
+dxo.width=0;
+dxo.height=0;
+dxo.InlineInitialize();
+
+//--&gt;
+</script><table id="ContentPlaceHolder1_ddlExercicioTipo_LP" class="dxeLoadingPanel" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+	<tbody><tr>
+		<td class="dx" style="padding-right:8px;"><img src="/PortaldaTransparencia/DXR.axd?r=2_12-4Ttw8" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;">Loading…</td>
+	</tr>
+</tbody></table><div id="ContentPlaceHolder1_ddlExercicioTipo_LD" class="dxeLoadingDiv" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_531005383" type="text/javascript">
+&lt;!--
+aspxAddHoverItems('ContentPlaceHolder1_ddlExercicioTipo',[[['dxeButtonEditButtonHover'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddPressedItems('ContentPlaceHolder1_ddlExercicioTipo',[[['dxeButtonEditButtonPressed'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddDisabledItems('ContentPlaceHolder1_ddlExercicioTipo',[[['dxeDisabled'],[''],['','I']],[['dxeDisabled dxeButtonDisabled'],[''],['B-1'],,[[{'spriteCssClass':'dxEditors_edtDropDownDisabled'}]],['Img']]]);
+document.getElementById("ContentPlaceHolder1_ddlExercicioTipo_I").setAttribute("autocomplete", "off");
+
+var dxo = new ASPxClientComboBox('ContentPlaceHolder1_ddlExercicioTipo');
+window['ddlExercicioTipo'] = dxo;
+dxo.autoPostBack = true;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$ddlExercicioTipo',arg,aspxCallback,'ContentPlaceHolder1_ddlExercicioTipo',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlExercicioTipo';
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.incrementalFilteringMode='Contains';
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+                                    </li>
+                                    <li><span class="titulo">Mês:</span>
+                                        <table class="dxeButtonEdit" cellspacing="1" cellpadding="0" id="ContentPlaceHolder1_ddlMesTipo" style="width:50%;">
+	<tbody><tr>
+		<td style="display:none;"><input id="ContentPlaceHolder1_ddlMesTipo_VI" name="ContentPlaceHolder1_ddlMesTipo_VI" type="hidden" /></td><td class="dxic" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlMesTipo', event)" style="width:100%;padding-left:1px;padding-right:1px;padding-top:1px;padding-bottom:1px;"><input class="dxeEditArea dxeEditAreaSys" id="ContentPlaceHolder1_ddlMesTipo_I" name="ctl00$ContentPlaceHolder1$ddlMesTipo" onfocus="aspxEGotFocus('ContentPlaceHolder1_ddlMesTipo')" onblur="aspxELostFocus('ContentPlaceHolder1_ddlMesTipo')" onchange="aspxETextChanged('ContentPlaceHolder1_ddlMesTipo')" onkeydown="aspxEKeyDown('ContentPlaceHolder1_ddlMesTipo', event)" type="text" style="height:15px;" autocomplete="off" /></td><td id="ContentPlaceHolder1_ddlMesTipo_B-1" class="dxeButtonEditButton" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlMesTipo', event)" style="-khtml-user-select:none;"><table class="dxbebt" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;">
+			<tbody><tr>
+				<td class="dx"><img id="ContentPlaceHolder1_ddlMesTipo_B-1Img" class="dxEditors_edtDropDown" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="v" /></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table><input type="hidden" id="ContentPlaceHolder1_ddlMesTipo_DDDWS" name="ContentPlaceHolder1_ddlMesTipo_DDDWS" value="0:0:-1:-10000:-10000:0:-10000:-10000:1" /><div id="ContentPlaceHolder1_ddlMesTipo_DDD_PW-1" style="position:absolute;left:0px;top:0px;z-index:10000;visibility:hidden;display:none;">
+	<table id="ContentPlaceHolder1_ddlMesTipo_DDD_PWST-1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;position:relative;">
+		<tbody><tr>
+			<td onmousedown="aspxPWMDown(event,'ContentPlaceHolder1_ddlMesTipo_DDD',-1,false)" style="width:200px;cursor:default;"><table id="ContentPlaceHolder1_ddlMesTipo_DDD_CLW-1" cellspacing="0" cellpadding="0" style="width:200px;border-collapse:collapse;border-collapse:separate;">
+				<tbody><tr>
+					<td id="ContentPlaceHolder1_ddlMesTipo_DDD_PWC-1" style="height:100%;"><div id="ContentPlaceHolder1_ddlMesTipo_DDD_CSD-1">
+						<input type="hidden" id="ContentPlaceHolder1_ddlMesTipo_DDD_LDeletedItems" name="ContentPlaceHolder1_ddlMesTipo_DDD_LDeletedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlMesTipo_DDD_LInsertedItems" name="ContentPlaceHolder1_ddlMesTipo_DDD_LInsertedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlMesTipo_DDD_LCustomCallback" name="ContentPlaceHolder1_ddlMesTipo_DDD_LCustomCallback" value="" /><table class="dxeListBox" cellspacing="0" cellpadding="0" id="ContentPlaceHolder1_ddlMesTipo_DDD_L" style="border-collapse:collapse;border-collapse:separate;">
+							<tbody><tr>
+								<td valign="top"><div id="ContentPlaceHolder1_ddlMesTipo_DDD_L_D" class="dxlbd" style="width:100%;overflow-x:hidden;overflow-y:auto;">
+									<input id="ContentPlaceHolder1_ddlMesTipo_DDD_L_VI" type="hidden" name="ctl00$ContentPlaceHolder1$ddlMesTipo$DDD$L" value="" /><table cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;visibility:hidden!important;display:none!important;">
+										<tbody><tr id="ContentPlaceHolder1_ddlMesTipo_DDD_L_LBI-1" class="dxeListBoxItemRow">
+											<td id="ContentPlaceHolder1_ddlMesTipo_DDD_L_LBI-1T0" class="dxeListBoxItem"> </td>
+										</tr>
+									</tbody></table><table id="ContentPlaceHolder1_ddlMesTipo_DDD_L_LBT" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+										<tbody></tbody></table>
+								</div></td>
+							</tr>
+						</tbody></table><script id="dxss_1728859912" type="text/javascript">
+&lt;!--
+aspxAddDisabledItems('ContentPlaceHolder1_ddlMesTipo_DDD_L',[[['dxeDisabled'],[''],['']]]);
+
+var dxo = new ASPxClientListBox('ContentPlaceHolder1_ddlMesTipo_DDD_L');
+window['ContentPlaceHolder1_ddlMesTipo_DDD_L'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlMesTipo$DDD$L';
+dxo.SelectedIndexChanged.AddHandler(function (s, e) { aspxCBLBSelectedIndexChanged('ContentPlaceHolder1_ddlMesTipo', e); });
+dxo.ItemClick.AddHandler(function (s, e) { aspxCBLBItemMouseUp('ContentPlaceHolder1_ddlMesTipo', e); });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.isComboBoxList = true;
+dxo.hasSampleItem = true;
+dxo.isHasFakeRow = true;
+dxo.hoverClasses=['dxeListBoxItemHover'];
+dxo.selectedClasses=['dxeListBoxItemSelected'];
+dxo.disabledClasses=['dxeDisabled'];
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+					</div></td>
+				</tr>
+			</tbody></table></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_25-4Ttw8') no-repeat left top;"></td>
+		</tr><tr>
+			<td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_24-4Ttw8') no-repeat left top;"></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_26-4Ttw8') no-repeat left top;"><div style="height:5px;width:5px;">
+
+			</div></td>
+		</tr>
+	</tbody></table>
+</div><script id="dxss_87837521" type="text/javascript">
+&lt;!--
+
+var dxo = new ASPxClientPopupControl('ContentPlaceHolder1_ddlMesTipo_DDD');
+window['ContentPlaceHolder1_ddlMesTipo_DDD'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlMesTipo$DDD';
+dxo.Shown.AddHandler(function (s, e) { aspxDDBPCShown('ContentPlaceHolder1_ddlMesTipo', e); });
+dxo.adjustInnerControlsSizeOnShow=false;
+dxo.closeAction='CloseButton';
+dxo.popupHorizontalAlign='LeftSides';
+dxo.popupVerticalAlign='Below';
+dxo.width=0;
+dxo.height=0;
+dxo.InlineInitialize();
+
+//--&gt;
+</script><table id="ContentPlaceHolder1_ddlMesTipo_LP" class="dxeLoadingPanel" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+	<tbody><tr>
+		<td class="dx" style="padding-right:8px;"><img src="/PortaldaTransparencia/DXR.axd?r=2_12-4Ttw8" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;">Loading…</td>
+	</tr>
+</tbody></table><div id="ContentPlaceHolder1_ddlMesTipo_LD" class="dxeLoadingDiv" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_2053808104" type="text/javascript">
+&lt;!--
+aspxAddHoverItems('ContentPlaceHolder1_ddlMesTipo',[[['dxeButtonEditButtonHover'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddPressedItems('ContentPlaceHolder1_ddlMesTipo',[[['dxeButtonEditButtonPressed'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddDisabledItems('ContentPlaceHolder1_ddlMesTipo',[[['dxeDisabled'],[''],['','I']],[['dxeDisabled dxeButtonDisabled'],[''],['B-1'],,[[{'spriteCssClass':'dxEditors_edtDropDownDisabled'}]],['Img']]]);
+document.getElementById("ContentPlaceHolder1_ddlMesTipo_I").setAttribute("autocomplete", "off");
+
+var dxo = new ASPxClientComboBox('ContentPlaceHolder1_ddlMesTipo');
+window['ddlMesTipo'] = dxo;
+dxo.autoPostBack = true;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$ddlMesTipo',arg,aspxCallback,'ContentPlaceHolder1_ddlMesTipo',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlMesTipo';
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.incrementalFilteringMode='Contains';
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+                                    </li>
+                                    <li><span class="titulo">Dia:</span>
+                                        <table class="dxeButtonEdit" cellspacing="1" cellpadding="0" id="ContentPlaceHolder1_ddlDiaTipo" style="width:50%;">
+	<tbody><tr>
+		<td style="display:none;"><input id="ContentPlaceHolder1_ddlDiaTipo_VI" name="ContentPlaceHolder1_ddlDiaTipo_VI" type="hidden" /></td><td class="dxic" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlDiaTipo', event)" style="width:100%;padding-left:1px;padding-right:1px;padding-top:1px;padding-bottom:1px;"><input class="dxeEditArea dxeEditAreaSys" id="ContentPlaceHolder1_ddlDiaTipo_I" name="ctl00$ContentPlaceHolder1$ddlDiaTipo" onfocus="aspxEGotFocus('ContentPlaceHolder1_ddlDiaTipo')" onblur="aspxELostFocus('ContentPlaceHolder1_ddlDiaTipo')" onchange="aspxETextChanged('ContentPlaceHolder1_ddlDiaTipo')" onkeydown="aspxEKeyDown('ContentPlaceHolder1_ddlDiaTipo', event)" type="text" style="height:15px;" autocomplete="off" /></td><td id="ContentPlaceHolder1_ddlDiaTipo_B-1" class="dxeButtonEditButton" onmousedown="return aspxDDDropDown('ContentPlaceHolder1_ddlDiaTipo', event)" style="-khtml-user-select:none;"><table class="dxbebt" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;">
+			<tbody><tr>
+				<td class="dx"><img id="ContentPlaceHolder1_ddlDiaTipo_B-1Img" class="dxEditors_edtDropDown" src="/PortaldaTransparencia/DXR.axd?r=1_5-4Ttw8" alt="v" /></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table><input type="hidden" id="ContentPlaceHolder1_ddlDiaTipo_DDDWS" name="ContentPlaceHolder1_ddlDiaTipo_DDDWS" value="0:0:-1:-10000:-10000:0:-10000:-10000:1" /><div id="ContentPlaceHolder1_ddlDiaTipo_DDD_PW-1" style="position:absolute;left:0px;top:0px;z-index:10000;visibility:hidden;display:none;">
+	<table id="ContentPlaceHolder1_ddlDiaTipo_DDD_PWST-1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;position:relative;">
+		<tbody><tr>
+			<td onmousedown="aspxPWMDown(event,'ContentPlaceHolder1_ddlDiaTipo_DDD',-1,false)" style="width:200px;cursor:default;"><table id="ContentPlaceHolder1_ddlDiaTipo_DDD_CLW-1" cellspacing="0" cellpadding="0" style="width:200px;border-collapse:collapse;border-collapse:separate;">
+				<tbody><tr>
+					<td id="ContentPlaceHolder1_ddlDiaTipo_DDD_PWC-1" style="height:100%;"><div id="ContentPlaceHolder1_ddlDiaTipo_DDD_CSD-1">
+						<input type="hidden" id="ContentPlaceHolder1_ddlDiaTipo_DDD_LDeletedItems" name="ContentPlaceHolder1_ddlDiaTipo_DDD_LDeletedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlDiaTipo_DDD_LInsertedItems" name="ContentPlaceHolder1_ddlDiaTipo_DDD_LInsertedItems" value="" /><input type="hidden" id="ContentPlaceHolder1_ddlDiaTipo_DDD_LCustomCallback" name="ContentPlaceHolder1_ddlDiaTipo_DDD_LCustomCallback" value="" /><table class="dxeListBox" cellspacing="0" cellpadding="0" id="ContentPlaceHolder1_ddlDiaTipo_DDD_L" style="border-collapse:collapse;border-collapse:separate;">
+							<tbody><tr>
+								<td valign="top"><div id="ContentPlaceHolder1_ddlDiaTipo_DDD_L_D" class="dxlbd" style="width:100%;overflow-x:hidden;overflow-y:auto;">
+									<input id="ContentPlaceHolder1_ddlDiaTipo_DDD_L_VI" type="hidden" name="ctl00$ContentPlaceHolder1$ddlDiaTipo$DDD$L" value="" /><table cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-collapse:separate;visibility:hidden!important;display:none!important;">
+										<tbody><tr id="ContentPlaceHolder1_ddlDiaTipo_DDD_L_LBI-1" class="dxeListBoxItemRow">
+											<td id="ContentPlaceHolder1_ddlDiaTipo_DDD_L_LBI-1T0" class="dxeListBoxItem"> </td>
+										</tr>
+									</tbody></table><table id="ContentPlaceHolder1_ddlDiaTipo_DDD_L_LBT" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+										<tbody></tbody></table>
+								</div></td>
+							</tr>
+						</tbody></table><script id="dxss_1047759284" type="text/javascript">
+&lt;!--
+aspxAddDisabledItems('ContentPlaceHolder1_ddlDiaTipo_DDD_L',[[['dxeDisabled'],[''],['']]]);
+
+var dxo = new ASPxClientListBox('ContentPlaceHolder1_ddlDiaTipo_DDD_L');
+window['ContentPlaceHolder1_ddlDiaTipo_DDD_L'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlDiaTipo$DDD$L';
+dxo.SelectedIndexChanged.AddHandler(function (s, e) { aspxCBLBSelectedIndexChanged('ContentPlaceHolder1_ddlDiaTipo', e); });
+dxo.ItemClick.AddHandler(function (s, e) { aspxCBLBItemMouseUp('ContentPlaceHolder1_ddlDiaTipo', e); });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.isComboBoxList = true;
+dxo.hasSampleItem = true;
+dxo.isHasFakeRow = true;
+dxo.hoverClasses=['dxeListBoxItemHover'];
+dxo.selectedClasses=['dxeListBoxItemSelected'];
+dxo.disabledClasses=['dxeDisabled'];
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+					</div></td>
+				</tr>
+			</tbody></table></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_25-4Ttw8') no-repeat left top;"></td>
+		</tr><tr>
+			<td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_24-4Ttw8') no-repeat left top;"></td><td style="background:url('/PortaldaTransparencia/DXR.axd?r=1_26-4Ttw8') no-repeat left top;"><div style="height:5px;width:5px;">
+
+			</div></td>
+		</tr>
+	</tbody></table>
+</div><script id="dxss_545403305" type="text/javascript">
+&lt;!--
+
+var dxo = new ASPxClientPopupControl('ContentPlaceHolder1_ddlDiaTipo_DDD');
+window['ContentPlaceHolder1_ddlDiaTipo_DDD'] = dxo;
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlDiaTipo$DDD';
+dxo.Shown.AddHandler(function (s, e) { aspxDDBPCShown('ContentPlaceHolder1_ddlDiaTipo', e); });
+dxo.adjustInnerControlsSizeOnShow=false;
+dxo.closeAction='CloseButton';
+dxo.popupHorizontalAlign='LeftSides';
+dxo.popupVerticalAlign='Below';
+dxo.width=0;
+dxo.height=0;
+dxo.InlineInitialize();
+
+//--&gt;
+</script><table id="ContentPlaceHolder1_ddlDiaTipo_LP" class="dxeLoadingPanel" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+	<tbody><tr>
+		<td class="dx" style="padding-right:8px;"><img src="/PortaldaTransparencia/DXR.axd?r=2_12-4Ttw8" alt="" align="middle" /></td><td class="dx" style="padding-left:0px;">Loading…</td>
+	</tr>
+</tbody></table><div id="ContentPlaceHolder1_ddlDiaTipo_LD" class="dxeLoadingDiv" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_1790020436" type="text/javascript">
+&lt;!--
+aspxAddHoverItems('ContentPlaceHolder1_ddlDiaTipo',[[['dxeButtonEditButtonHover'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddPressedItems('ContentPlaceHolder1_ddlDiaTipo',[[['dxeButtonEditButtonPressed'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddDisabledItems('ContentPlaceHolder1_ddlDiaTipo',[[['dxeDisabled'],[''],['','I']],[['dxeDisabled dxeButtonDisabled'],[''],['B-1'],,[[{'spriteCssClass':'dxEditors_edtDropDownDisabled'}]],['Img']]]);
+document.getElementById("ContentPlaceHolder1_ddlDiaTipo_I").setAttribute("autocomplete", "off");
+
+var dxo = new ASPxClientComboBox('ContentPlaceHolder1_ddlDiaTipo');
+window['ddlDiaTipo'] = dxo;
+dxo.autoPostBack = true;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$ddlDiaTipo',arg,aspxCallback,'ContentPlaceHolder1_ddlDiaTipo',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$ContentPlaceHolder1$ddlDiaTipo';
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused','');
+dxo.incrementalFilteringMode='Contains';
+dxo.InlineInitialize();
+
+//--&gt;
+</script>
+                                    </li>
+                                    <li>
+                                        <input type="submit" name="ctl00$ContentPlaceHolder1$Button1" value="Pesquisar" id="ContentPlaceHolder1_Button1" class="btazul" style="margin-right: -410px" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div></div>
+    
+
+<script type="text/javascript">
+//&lt;![CDATA[
+
+WebForm_InitCallback();//]]&gt;
+</script>
+
+
+
+</div><input type="hidden" name="DXScript" value="1_42,1_74,2_22,2_29,1_46,1_54,2_21,1_67,1_64,2_24" /><span style="display: none !important;"><input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" /></span><span style="display: none !important;"><input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" /></span><span style="display: none !important;"><input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY3NTI0MTk1Mg9kFgJmD2QWAgIBD2QWBgIBDxYCHgRocmVmBTdodHRwOi8vMTg3LjExLjEzMy4xNS9Qb3J0YWxkYVRyYW5zcGFyZW5jaWFcZGVmYXVsdC5hc3B4ZAIFDw8WAh4EVGV4dAUxQWdlbmNpYSBSZWd1bGFkb3JhIGRhIEVzdMOibmNpYSBUdXLDrXN0aWNhIGRlIEl0dWRkAgcPZBYCAgMPZBYCZg9kFhACAQ8UKwAFDxYEHg9EYXRhU291cmNlQm91bmRnHgVWYWx1ZQUEMjAxM2Q8KwAMAQAWBB4JQmFja0NvbG9yCqQBHgRfIVNCAghkPCsACQEIFCsABBYEHhJFbmFibGVDYWxsYmFja01vZGVoHidFbmFibGVTeW5jaHJvbml6YXRpb25PblBlcmZvcm1DYWxsYmFjayBoZA8WAh4KSXNTYXZlZEFsbGcPFCsAAxQrAAEWCB8BBQQyMDE1HwMFBDIwMTUeCEltYWdlVXJsZR4OUnVudGltZUNyZWF0ZWRnFCsAARYIHwEFBDIwMTQfAwUEMjAxNB8JZR8KZxQrAAEWCB8BBQQyMDEzHwMFBDIwMTMfCWUfCmdkZGRkAgMPFCsABQ8WBB8CZx8DBQdKYW5laXJvZDwrAAwBABYEHwQKpAEfBQIIZDwrAAkBCBQrAAQWBB8GaB8HaGQPFgIfCGcPFCsADBQrAAEWCB8BBQdKYW5laXJvHwMFB0phbmVpcm8fCWUfCmcUKwABFggfAQUJRmV2ZXJlaXJvHwMFCUZldmVyZWlybx8JZR8KZxQrAAEWCB8BBQZNYXLDp28fAwUGTWFyw6dvHwllHwpnFCsAARYIHwEFBUFicmlsHwMFBUFicmlsHwllHwpnFCsAARYIHwEFBE1haW8fAwUETWFpbx8JZR8KZxQrAAEWCB8BBQVKdW5obx8DBQVKdW5obx8JZR8KZxQrAAEWCB8BBQVKdWxobx8DBQVKdWxobx8JZR8KZxQrAAEWCB8BBQZBZ29zdG8fAwUGQWdvc3RvHwllHwpnFCsAARYIHwEFCFNldGVtYnJvHwMFCFNldGVtYnJvHwllHwpnFCsAARYIHwEFB091dHVicm8fAwUHT3V0dWJybx8JZR8KZxQrAAEWCB8BBQhOb3ZlbWJybx8DBQhOb3ZlbWJybx8JZR8KZxQrAAEWCB8BBQhEZXplbWJybx8DBQhEZXplbWJybx8JZR8KZ2RkZGQCBQ8UKwAFDxYEHwJnHwMFATFkPCsADAEAFgQfBAqkAR8FAghkPCsACQEIFCsABBYEHwZoHwdoZA8WAh8IZw8UKwAfFCsAARYIHwEFATEfAwUBMR8JZR8KZxQrAAEWCB8BBQEyHwMFATIfCWUfCmcUKwABFggfAQUBMx8DBQEzHwllHwpnFCsAARYIHwEFATQfAwUBNB8JZR8KZxQrAAEWCB8BBQE1HwMFATUfCWUfCmcUKwABFggfAQUBNh8DBQE2HwllHwpnFCsAARYIHwEFATcfAwUBNx8JZR8KZxQrAAEWCB8BBQE4HwMFATgfCWUfCmcUKwABFggfAQUBOR8DBQE5HwllHwpnFCsAARYIHwEFAjEwHwMFAjEwHwllHwpnFCsAARYIHwEFAjExHwMFAjExHwllHwpnFCsAARYIHwEFAjEyHwMFAjEyHwllHwpnFCsAARYIHwEFAjEzHwMFAjEzHwllHwpnFCsAARYIHwEFAjE0HwMFAjE0HwllHwpnFCsAARYIHwEFAjE1HwMFAjE1HwllHwpnFCsAARYIHwEFAjE2HwMFAjE2HwllHwpnFCsAARYIHwEFAjE3HwMFAjE3HwllHwpnFCsAARYIHwEFAjE4HwMFAjE4HwllHwpnFCsAARYIHwEFAjE5HwMFAjE5HwllHwpnFCsAARYIHwEFAjIwHwMFAjIwHwllHwpnFCsAARYIHwEFAjIxHwMFAjIxHwllHwpnFCsAARYIHwEFAjIyHwMFAjIyHwllHwpnFCsAARYIHwEFAjIzHwMFAjIzHwllHwpnFCsAARYIHwEFAjI0HwMFAjI0HwllHwpnFCsAARYIHwEFAjI1HwMFAjI1HwllHwpnFCsAARYIHwEFAjI2HwMFAjI2HwllHwpnFCsAARYIHwEFAjI3HwMFAjI3HwllHwpnFCsAARYIHwEFAjI4HwMFAjI4HwllHwpnFCsAARYIHwEFAjI5HwMFAjI5HwllHwpnFCsAARYIHwEFAjMwHwMFAjMwHwllHwpnFCsAARYIHwEFAjMxHwMFAjMxHwllHwpnZGRkZAIHDxQrAAUPFgIfA2RkPCsADAEAFgQfBAni4f//HwUCCGRkZGQCCw8UKwAFDxYEHwJnHwNlZGRkPCsACQEIFCsABBYEHwZoHwdoZA8WAh8IZw8UKwADFCsAARYIHwEFBDIwMTUfAwUEMjAxNR8JZR8KZxQrAAEWCB8BBQQyMDE0HwMFBDIwMTQfCWUfCmcUKwABFggfAQUEMjAxMx8DBQQyMDEzHwllHwpnZGRkZAINDxQrAAUPFgQfAmcfA2VkZGQ8KwAJAQgUKwAEFgQfBmgfB2hkDxYCHwhnDxQrAAYUKwABFggfAQUHSmFuZWlybx8DBQdKYW5laXJvHwllHwpnFCsAARYIHwEFCUZldmVyZWlybx8DBQlGZXZlcmVpcm8fCWUfCmcUKwABFggfAQUGTWFyw6dvHwMFBk1hcsOnbx8JZR8KZxQrAAEWCB8BBQVBYnJpbB8DBQVBYnJpbB8JZR8KZxQrAAEWCB8BBQRNYWlvHwMFBE1haW8fCWUfCmcUKwABFggfAQUFSnVuaG8fAwUFSnVuaG8fCWUfCmdkZGRkAg8PFCsABQ8WBB8CZx8DZWRkZDwrAAkBCBQrAAQWBB8GaB8HaGQPFgIfCGcPFCsAHxQrAAEWCB8BBQExHwMFATEfCWUfCmcUKwABFggfAQUBMh8DBQEyHwllHwpnFCsAARYIHwEFATMfAwUBMx8JZR8KZxQrAAEWCB8BBQE0HwMFATQfCWUfCmcUKwABFggfAQUBNR8DBQE1HwllHwpnFCsAARYIHwEFATYfAwUBNh8JZR8KZxQrAAEWCB8BBQE3HwMFATcfCWUfCmcUKwABFggfAQUBOB8DBQE4HwllHwpnFCsAARYIHwEFATkfAwUBOR8JZR8KZxQrAAEWCB8BBQIxMB8DBQIxMB8JZR8KZxQrAAEWCB8BBQIxMR8DBQIxMR8JZR8KZxQrAAEWCB8BBQIxMh8DBQIxMh8JZR8KZxQrAAEWCB8BBQIxMx8DBQIxMx8JZR8KZxQrAAEWCB8BBQIxNB8DBQIxNB8JZR8KZxQrAAEWCB8BBQIxNR8DBQIxNR8JZR8KZxQrAAEWCB8BBQIxNh8DBQIxNh8JZR8KZxQrAAEWCB8BBQIxNx8DBQIxNx8JZR8KZxQrAAEWCB8BBQIxOB8DBQIxOB8JZR8KZxQrAAEWCB8BBQIxOR8DBQIxOR8JZR8KZxQrAAEWCB8BBQIyMB8DBQIyMB8JZR8KZxQrAAEWCB8BBQIyMR8DBQIyMR8JZR8KZxQrAAEWCB8BBQIyMh8DBQIyMh8JZR8KZxQrAAEWCB8BBQIyMx8DBQIyMx8JZR8KZxQrAAEWCB8BBQIyNB8DBQIyNB8JZR8KZxQrAAEWCB8BBQIyNR8DBQIyNR8JZR8KZxQrAAEWCB8BBQIyNh8DBQIyNh8JZR8KZxQrAAEWCB8BBQIyNx8DBQIyNx8JZR8KZxQrAAEWCB8BBQIyOB8DBQIyOB8JZR8KZxQrAAEWCB8BBQIyOR8DBQIyOR8JZR8KZxQrAAEWCB8BBQIzMB8DBQIzMB8JZR8KZxQrAAEWCB8BBQIzMR8DBQIzMR8JZR8KZ2RkZGQCEw9kFggCAQ8UKwAFDxYCHwNkZGRkPCsACQEIFCsABBYEHwZoHwdoZGQPZBAWAWYWARQrAAEWAh4PQ29sVmlzaWJsZUluZGV4ZmRkZAIDDzwrAAUBAA8WAh8DZGRkAgUPPCsABQEADxYCHwNkZGQCBw88KwAFAQAPFgIfA2RkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WCwUqY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkZGxFeGVyY2ljaW8kREREBSRjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRkbE1lcyREREQFJGN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGRsRGlhJERERAUsY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkZGxUaXBvRGVzcGVzYSREREQFMWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGRsRXhlcmNpY2lvUmVjZWl0YSREREQFK2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGRsTWVzUmVjZWl0YSREREQFK2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGRsRGlhUmVjZWl0YSREREQFLmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGRsVGlwb0RvY3VtZW50byREREQFLmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGRsRXhlcmNpY2lvVGlwbyREREQFKGN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGRsTWVzVGlwbyREREQFKGN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGRsRGlhVGlwbyRERETzg1/kkCrOQyYdfIz67pGp/VajVPy3M47+NP/UeAvACg==" /></span><span style="display: none !important;"><input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C1D7D404" /></span><span style="display: none !important;"><input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAA/HIvL/Nj9UFXwlKswQHlC3/u4Hu+92Sg5F8Lxu+QwinBC3QrT7b0TEooVI6oxW2FcbdwIdgH0KwzOtmrxcNpJLh1pDJoMC5V9pH9GDqyicZb+FDkSiVyoQpAa+EGALUVF9BpdRzfAJaI76IwTC4ubdq237d+3Whp/m6OqwoHG/qcXXTlmDTcwRwSQLnPKwdzNBYl9b2lKBiqA0D2EOYutANx39qsBv84wOaJYvxqWwFTd/ulZ73A3jTSQsaM6RCn9dDBxMXsvOux8XPMfEzsAXXEoVA7ddwZhA9xjd+rcIKIw7t+aOQlJ+rpluCTaRNad8KOEb+DwU4eoNJBbbwsRo1oHa3vid3IIcau4U1vs+QA==" /></span></form><div style="width: 0px; height: 0px; overflow: visible; display: none;">31</div></body></html>
